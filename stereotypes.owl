@@ -1,0 +1,401 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://sterheotypes.di.unito.it/stereotypes.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://sterheotypes.di.unito.it/stereotypes.owl">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Adjective"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Analogy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AuthoritarianStance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BaseNLExpression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Christianity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComplexNLExpression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConservativeStance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ethnicity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Female"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gender"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Generalization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HairColor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Headline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hebraism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Height"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hinduism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Idiom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Irregular"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Islam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LeftwingStance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MWE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Male"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Migrant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NLExpression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NLStatement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Newspaper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Noun"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OnlineNewspaper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalTrait"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PoliticalStance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PoliticalStatus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProperNoun"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Refugee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Regular"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Religion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Retweet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RightwingStance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SkinColor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SocialMediaPlatform"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SocialMediaPost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpokenUtterance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stereotype"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tweet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Verb"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Word"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasHairColor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPhysicalTrait"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPoliticalStatus"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSkinColor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ifOfEthnicity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBelieverOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#postedOnSocialMediaPlatform"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#publishedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#saidOn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dateTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#language"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Adjective"/>
+        <Class IRI="#Word"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Analogy"/>
+        <Class IRI="#ComplexNLExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AuthoritarianStance"/>
+        <Class IRI="#PoliticalStance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BaseNLExpression"/>
+        <Class IRI="#NLExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Christianity"/>
+        <Class IRI="#Religion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComplexNLExpression"/>
+        <Class IRI="#NLExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConservativeStance"/>
+        <Class IRI="#PoliticalStance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Female"/>
+        <Class IRI="#Gender"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Generalization"/>
+        <Class IRI="#Stereotype"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HairColor"/>
+        <Class IRI="#PhysicalTrait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Headline"/>
+        <Class IRI="#NLStatement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hebraism"/>
+        <Class IRI="#Religion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Height"/>
+        <Class IRI="#PhysicalTrait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hinduism"/>
+        <Class IRI="#Religion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Idiom"/>
+        <Class IRI="#MWE"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Irregular"/>
+        <Class IRI="#PoliticalStatus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Islam"/>
+        <Class IRI="#Religion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LeftwingStance"/>
+        <Class IRI="#PoliticalStance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MWE"/>
+        <Class IRI="#BaseNLExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Male"/>
+        <Class IRI="#Gender"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Migrant"/>
+        <Class IRI="#PoliticalStatus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Newspaper"/>
+        <Class IRI="#Medium"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Noun"/>
+        <Class IRI="#Word"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OnlineNewspaper"/>
+        <Class IRI="#Newspaper"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProperNoun"/>
+        <Class IRI="#Word"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Refugee"/>
+        <Class IRI="#PoliticalStatus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Regular"/>
+        <Class IRI="#PoliticalStatus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Retweet"/>
+        <Class IRI="#Tweet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RightwingStance"/>
+        <Class IRI="#PoliticalStance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SkinColor"/>
+        <Class IRI="#PhysicalTrait"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SocialMediaPlatform"/>
+        <Class IRI="#Medium"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SocialMediaPost"/>
+        <Class IRI="#NLStatement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpokenUtterance"/>
+        <Class IRI="#NLStatement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tweet"/>
+        <Class IRI="#SocialMediaPost"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Verb"/>
+        <Class IRI="#Word"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Word"/>
+        <Class IRI="#BaseNLExpression"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Irregular"/>
+        <Class IRI="#Regular"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasHairColor"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPhysicalTrait"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#ifOfEthnicity"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isBelieverOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPoliticalStatus"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#postedOnSocialMediaPlatform"/>
+        <Class IRI="#SocialMediaPost"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#publishedBy"/>
+        <Class IRI="#Headline"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#saidOn"/>
+        <Class IRI="#SpokenUtterance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPoliticalStatus"/>
+        <Class IRI="#PoliticalStatus"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#postedOnSocialMediaPlatform"/>
+        <Class IRI="#SocialMediaPlatform"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dateTime"/>
+        <Class IRI="#Headline"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dateTime"/>
+        <Class IRI="#SocialMediaPost"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dateTime"/>
+        <Class IRI="#SpokenUtterance"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#dateTime"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#language"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
