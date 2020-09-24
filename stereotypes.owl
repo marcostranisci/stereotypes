@@ -6,6 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://sterheotypes.di.unito.it/stereotypes.owl">
+    <Prefix name="" IRI="http://sterheotypes.di.unito.it/stereotypes.owl"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -33,7 +34,13 @@
         <Class IRI="#ConservativeStance"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Dimension"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Ethnicity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FacebookPost"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Female"/>
@@ -57,7 +64,13 @@
         <Class IRI="#Height"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#HeteroSexual"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Hinduism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Homosexual"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Idiom"/>
@@ -67,6 +80,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Islam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Language"/>
     </Declaration>
     <Declaration>
         <Class IRI="#LeftwingStance"/>
@@ -111,6 +127,9 @@
         <Class IRI="#PoliticalStatus"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Prejudice"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#ProperNoun"/>
     </Declaration>
     <Declaration>
@@ -127,6 +146,12 @@
     </Declaration>
     <Declaration>
         <Class IRI="#RightwingStance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SexualOrientation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sinedoche"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SkinColor"/>
@@ -153,7 +178,13 @@
         <Class IRI="#Word"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#generalizesDimension"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasHairColor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPersonalTarget"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasPhysicalTrait"/>
@@ -171,6 +202,9 @@
         <ObjectProperty IRI="#isBelieverOf"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isExpressedIn"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#postedOnSocialMediaPlatform"/>
     </Declaration>
     <Declaration>
@@ -184,6 +218,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#language"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#polarity"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#Adjective"/>
@@ -214,12 +251,24 @@
         <Class IRI="#PoliticalStance"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Ethnicity"/>
+        <Class IRI="#Dimension"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FacebookPost"/>
+        <Class IRI="#SocialMediaPost"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Female"/>
         <Class IRI="#Gender"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Gender"/>
+        <Class IRI="#Dimension"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Generalization"/>
-        <Class IRI="#Stereotype"/>
+        <Class IRI="#ComplexNLExpression"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HairColor"/>
@@ -238,8 +287,16 @@
         <Class IRI="#PhysicalTrait"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#HeteroSexual"/>
+        <Class IRI="#SexualOrientation"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Hinduism"/>
         <Class IRI="#Religion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Homosexual"/>
+        <Class IRI="#SexualOrientation"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Idiom"/>
@@ -282,6 +339,18 @@
         <Class IRI="#Newspaper"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#PhysicalTrait"/>
+        <Class IRI="#Dimension"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PoliticalStance"/>
+        <Class IRI="#Dimension"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PoliticalStatus"/>
+        <Class IRI="#Dimension"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ProperNoun"/>
         <Class IRI="#Word"/>
     </SubClassOf>
@@ -294,12 +363,24 @@
         <Class IRI="#PoliticalStatus"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Religion"/>
+        <Class IRI="#Dimension"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Retweet"/>
         <Class IRI="#Tweet"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#RightwingStance"/>
         <Class IRI="#PoliticalStance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SexualOrientation"/>
+        <Class IRI="#Dimension"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sinedoche"/>
+        <Class IRI="#ComplexNLExpression"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SkinColor"/>
@@ -349,9 +430,29 @@
         <ObjectProperty IRI="#isBelieverOf"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isExpressedIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#generalizesDimension"/>
+        <Class IRI="#Stereotype"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasHairColor"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPersonalTarget"/>
+        <Class IRI="#NLStatement"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasPoliticalStatus"/>
         <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isExpressedIn"/>
+        <Class IRI="#Stereotype"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#postedOnSocialMediaPlatform"/>
@@ -366,12 +467,32 @@
         <Class IRI="#SpokenUtterance"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#generalizesDimension"/>
+        <Class IRI="#Dimension"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasHairColor"/>
+        <Class IRI="#HairColor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPersonalTarget"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasPoliticalStatus"/>
         <Class IRI="#PoliticalStatus"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#isExpressedIn"/>
+        <Class IRI="#NLExpression"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#postedOnSocialMediaPlatform"/>
         <Class IRI="#SocialMediaPlatform"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#saidOn"/>
+        <Class IRI="#Person"/>
     </ObjectPropertyRange>
     <DataPropertyDomain>
         <DataProperty IRI="#dateTime"/>
@@ -385,6 +506,10 @@
         <DataProperty IRI="#dateTime"/>
         <Class IRI="#SpokenUtterance"/>
     </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#polarity"/>
+        <Class IRI="#Stereotype"/>
+    </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#dateTime"/>
         <Datatype abbreviatedIRI="xsd:dateTime"/>
@@ -392,6 +517,10 @@
     <DataPropertyRange>
         <DataProperty IRI="#language"/>
         <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#polarity"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
 </Ontology>
 
