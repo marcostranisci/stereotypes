@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://sterheotypes.di.unito.it/stereotypes.owl"
+     xml:base="http://stereotypes.di.unito.it/stereotypes.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://sterheotypes.di.unito.it/stereotypes.owl">
-    <Prefix name="" IRI="http://sterheotypes.di.unito.it/stereotypes.owl"/>
+     ontologyIRI="http://stereotypes.di.unito.it/stereotypes.owl">
+    <Prefix name="" IRI="http://stereotypes.di.unito.it/stereotypes.owl"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -16,28 +16,79 @@
         <Class IRI="#Adjective"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Age"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Analogy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Apolide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Asexual"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AsylumSeeker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Atheism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Audio"/>
     </Declaration>
     <Declaration>
         <Class IRI="#AuthoritarianStance"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#BaseNLExpression"/>
+        <Class IRI="#Bisexual"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blog"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ByAquisitionCitizen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ByBirthCitizen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Channel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Child"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Christianity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ComplexNLExpression"/>
+        <Class IRI="#Church"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CisgenderHeterosexual"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Citizen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CommunicativeElement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Communist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Conservative"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ConservativeStance"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Dimension"/>
+        <Class IRI="#Disable"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Ethnicity"/>
+        <Class IRI="#EconomicMigrant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EthnicMinorities"/>
     </Declaration>
     <Declaration>
         <Class IRI="#FacebookPost"/>
@@ -46,10 +97,19 @@
         <Class IRI="#Female"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#FigureOfSpeech"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gay"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Gender"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Generalization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Group"/>
     </Declaration>
     <Declaration>
         <Class IRI="#HairColor"/>
@@ -64,16 +124,25 @@
         <Class IRI="#Height"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#HeteroSexual"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Hinduism"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Homosexual"/>
+        <Class IRI="#HomeCountry"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Idiom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Image"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#International"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intersexual"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Iperbole"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Irregular"/>
@@ -82,10 +151,31 @@
         <Class IRI="#Islam"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Language"/>
+        <Class IRI="#LGBTQI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LeftWing"/>
     </Declaration>
     <Declaration>
         <Class IRI="#LeftwingStance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LegalStatus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lesbian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Liberal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LinguisticsFeature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Local"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lutheran"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MWE"/>
@@ -94,19 +184,34 @@
         <Class IRI="#Male"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Medium"/>
+        <Class IRI="#Metaphor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Migrant"/>
+        <Class IRI="#Methonomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mothertongue"/>
     </Declaration>
     <Declaration>
         <Class IRI="#NLExpression"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#NLStatement"/>
+        <Class IRI="#National"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nationalist"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Newspaper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non-ProfitAssociation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonBinary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonCitizen"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Noun"/>
@@ -118,19 +223,37 @@
         <Class IRI="#Person"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#PhysicalTrait"/>
+        <Class IRI="#PersonAttributes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PersonalStatus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalTraits"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PoliticalParty"/>
     </Declaration>
     <Declaration>
         <Class IRI="#PoliticalStance"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#PoliticalStatus"/>
+        <Class IRI="#Populist"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Prejudice"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ProperNoun"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Queer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Radio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reformist"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Refugee"/>
@@ -142,16 +265,28 @@
         <Class IRI="#Religion"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#ReligiousMinorities"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Retweet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RightWing"/>
     </Declaration>
     <Declaration>
         <Class IRI="#RightwingStance"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SexualOrientation"/>
+        <Class IRI="#Roma"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Sinedoche"/>
+        <Class IRI="#SchengenCitizen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecondLanguage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SexualOrientation"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SkinColor"/>
@@ -163,10 +298,31 @@
         <Class IRI="#SocialMediaPost"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#SpokenLanguage"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#SpokenUtterance"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Stereotype"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Synecdoche"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Television"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Text"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThirdLanguage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TradeUnion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transgender"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Tweet"/>
@@ -175,10 +331,25 @@
         <Class IRI="#Verb"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Video"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VulnerableGroupToDiscrimination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Web"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Women"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Word"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#generalizesDimension"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAttribute"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasHairColor"/>
@@ -217,6 +388,9 @@
         <DataProperty IRI="#dateTime"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#hasAge"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#language"/>
     </Declaration>
     <Declaration>
@@ -227,32 +401,96 @@
         <Class IRI="#Word"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Age"/>
+        <Class IRI="#PersonAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Analogy"/>
-        <Class IRI="#ComplexNLExpression"/>
+        <Class IRI="#FigureOfSpeech"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Apolide"/>
+        <Class IRI="#NonCitizen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Asexual"/>
+        <Class IRI="#SexualOrientation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AsylumSeeker"/>
+        <Class IRI="#NonCitizen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Atheism"/>
+        <Class IRI="#Religion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Audio"/>
+        <Class IRI="#CommunicativeElement"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#AuthoritarianStance"/>
         <Class IRI="#PoliticalStance"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#BaseNLExpression"/>
-        <Class IRI="#NLExpression"/>
+        <Class IRI="#Bisexual"/>
+        <Class IRI="#SexualOrientation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Blog"/>
+        <Class IRI="#Web"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ByAquisitionCitizen"/>
+        <Class IRI="#Citizen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ByBirthCitizen"/>
+        <Class IRI="#Citizen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Child"/>
+        <Class IRI="#Age"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Christianity"/>
         <Class IRI="#Religion"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ComplexNLExpression"/>
-        <Class IRI="#NLExpression"/>
+        <Class IRI="#Church"/>
+        <Class IRI="#Group"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CisgenderHeterosexual"/>
+        <Class IRI="#SexualOrientation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Citizen"/>
+        <Class IRI="#PersonalStatus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Communist"/>
+        <Class IRI="#PoliticalParty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Conservative"/>
+        <Class IRI="#PoliticalParty"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ConservativeStance"/>
         <Class IRI="#PoliticalStance"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Ethnicity"/>
-        <Class IRI="#Dimension"/>
+        <Class IRI="#Disable"/>
+        <Class IRI="#VulnerableGroupToDiscrimination"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EconomicMigrant"/>
+        <Class IRI="#NonCitizen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EthnicMinorities"/>
+        <Class IRI="#VulnerableGroupToDiscrimination"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#FacebookPost"/>
@@ -263,20 +501,24 @@
         <Class IRI="#Gender"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#FigureOfSpeech"/>
+        <Class IRI="#LinguisticsFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gay"/>
+        <Class IRI="#SexualOrientation"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Gender"/>
-        <Class IRI="#Dimension"/>
+        <Class IRI="#PersonAttributes"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Generalization"/>
-        <Class IRI="#ComplexNLExpression"/>
+        <Class IRI="#FigureOfSpeech"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HairColor"/>
-        <Class IRI="#PhysicalTrait"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Headline"/>
-        <Class IRI="#NLStatement"/>
+        <Class IRI="#PhysicalTraits"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Hebraism"/>
@@ -284,51 +526,123 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Height"/>
-        <Class IRI="#PhysicalTrait"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#HeteroSexual"/>
-        <Class IRI="#SexualOrientation"/>
+        <Class IRI="#PhysicalTraits"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Hinduism"/>
         <Class IRI="#Religion"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Homosexual"/>
-        <Class IRI="#SexualOrientation"/>
+        <Class IRI="#HomeCountry"/>
+        <Class IRI="#PersonAttributes"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Idiom"/>
         <Class IRI="#MWE"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Image"/>
+        <Class IRI="#CommunicativeElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#International"/>
+        <Class IRI="#Non-ProfitAssociation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intersexual"/>
+        <Class IRI="#SexualOrientation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Iperbole"/>
+        <Class IRI="#FigureOfSpeech"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Irregular"/>
-        <Class IRI="#PoliticalStatus"/>
+        <Class IRI="#LegalStatus"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Islam"/>
         <Class IRI="#Religion"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#LGBTQI"/>
+        <Class IRI="#VulnerableGroupToDiscrimination"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LeftWing"/>
+        <Class IRI="#PoliticalParty"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#LeftwingStance"/>
         <Class IRI="#PoliticalStance"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#LegalStatus"/>
+        <Class IRI="#NonCitizen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lesbian"/>
+        <Class IRI="#SexualOrientation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Liberal"/>
+        <Class IRI="#PoliticalParty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Local"/>
+        <Class IRI="#Non-ProfitAssociation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lutheran"/>
+        <Class IRI="#Christianity"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#MWE"/>
-        <Class IRI="#BaseNLExpression"/>
+        <Class IRI="#LinguisticsFeature"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Male"/>
         <Class IRI="#Gender"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Migrant"/>
-        <Class IRI="#PoliticalStatus"/>
+        <Class IRI="#Metaphor"/>
+        <Class IRI="#FigureOfSpeech"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Methonomy"/>
+        <Class IRI="#FigureOfSpeech"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mothertongue"/>
+        <Class IRI="#SpokenLanguage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NLExpression"/>
+        <Class IRI="#CommunicativeElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#National"/>
+        <Class IRI="#Non-ProfitAssociation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nationalist"/>
+        <Class IRI="#PoliticalParty"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Newspaper"/>
-        <Class IRI="#Medium"/>
+        <Class IRI="#Channel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non-ProfitAssociation"/>
+        <Class IRI="#Group"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonBinary"/>
+        <Class IRI="#Gender"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonCitizen"/>
+        <Class IRI="#PersonalStatus"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Noun"/>
@@ -336,67 +650,127 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#OnlineNewspaper"/>
-        <Class IRI="#Newspaper"/>
+        <Class IRI="#Web"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PhysicalTrait"/>
-        <Class IRI="#Dimension"/>
+        <Class IRI="#PersonalStatus"/>
+        <Class IRI="#PersonAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalTraits"/>
+        <Class IRI="#PersonAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PoliticalParty"/>
+        <Class IRI="#Group"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PoliticalStance"/>
-        <Class IRI="#Dimension"/>
+        <Class IRI="#PersonAttributes"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PoliticalStatus"/>
-        <Class IRI="#Dimension"/>
+        <Class IRI="#Populist"/>
+        <Class IRI="#PoliticalParty"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ProperNoun"/>
         <Class IRI="#Word"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Queer"/>
+        <Class IRI="#SexualOrientation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Radio"/>
+        <Class IRI="#Channel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reformist"/>
+        <Class IRI="#PoliticalParty"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Refugee"/>
-        <Class IRI="#PoliticalStatus"/>
+        <Class IRI="#NonCitizen"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Regular"/>
-        <Class IRI="#PoliticalStatus"/>
+        <Class IRI="#LegalStatus"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Religion"/>
-        <Class IRI="#Dimension"/>
+        <Class IRI="#PersonAttributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReligiousMinorities"/>
+        <Class IRI="#VulnerableGroupToDiscrimination"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Retweet"/>
         <Class IRI="#Tweet"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#RightWing"/>
+        <Class IRI="#PoliticalParty"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#RightwingStance"/>
         <Class IRI="#PoliticalStance"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#SexualOrientation"/>
-        <Class IRI="#Dimension"/>
+        <Class IRI="#Roma"/>
+        <Class IRI="#VulnerableGroupToDiscrimination"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Sinedoche"/>
-        <Class IRI="#ComplexNLExpression"/>
+        <Class IRI="#SchengenCitizen"/>
+        <Class IRI="#PersonalStatus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecondLanguage"/>
+        <Class IRI="#SpokenLanguage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SexualOrientation"/>
+        <Class IRI="#PersonAttributes"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SkinColor"/>
-        <Class IRI="#PhysicalTrait"/>
+        <Class IRI="#PhysicalTraits"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SocialMediaPlatform"/>
-        <Class IRI="#Medium"/>
+        <Class IRI="#Web"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#SocialMediaPost"/>
-        <Class IRI="#NLStatement"/>
+        <Class IRI="#SpokenLanguage"/>
+        <Class IRI="#PersonAttributes"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SpokenUtterance"/>
-        <Class IRI="#NLStatement"/>
+        <Class IRI="#NLExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Synecdoche"/>
+        <Class IRI="#FigureOfSpeech"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Television"/>
+        <Class IRI="#Channel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Text"/>
+        <Class IRI="#NLExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThirdLanguage"/>
+        <Class IRI="#SpokenLanguage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TradeUnion"/>
+        <Class IRI="#Group"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transgender"/>
+        <Class IRI="#SexualOrientation"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Tweet"/>
@@ -407,12 +781,81 @@
         <Class IRI="#Word"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Word"/>
-        <Class IRI="#BaseNLExpression"/>
+        <Class IRI="#Video"/>
+        <Class IRI="#CommunicativeElement"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VulnerableGroupToDiscrimination"/>
+        <Class IRI="#Group"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Web"/>
+        <Class IRI="#Channel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Women"/>
+        <Class IRI="#VulnerableGroupToDiscrimination"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Word"/>
+        <Class IRI="#LinguisticsFeature"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Age"/>
+        <Class IRI="#Gender"/>
+        <Class IRI="#HomeCountry"/>
+        <Class IRI="#PersonalStatus"/>
+        <Class IRI="#PhysicalTraits"/>
+        <Class IRI="#PoliticalStance"/>
+        <Class IRI="#Religion"/>
+        <Class IRI="#SexualOrientation"/>
+        <Class IRI="#SpokenLanguage"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Asexual"/>
+        <Class IRI="#Bisexual"/>
+        <Class IRI="#CisgenderHeterosexual"/>
+        <Class IRI="#Gay"/>
+        <Class IRI="#Intersexual"/>
+        <Class IRI="#Lesbian"/>
+        <Class IRI="#Queer"/>
+        <Class IRI="#Transgender"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Audio"/>
+        <Class IRI="#Image"/>
+        <Class IRI="#Text"/>
+        <Class IRI="#Video"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Communist"/>
+        <Class IRI="#Conservative"/>
+        <Class IRI="#LeftWing"/>
+        <Class IRI="#Liberal"/>
+        <Class IRI="#Nationalist"/>
+        <Class IRI="#Populist"/>
+        <Class IRI="#Reformist"/>
+        <Class IRI="#RightWing"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#International"/>
+        <Class IRI="#Local"/>
+        <Class IRI="#National"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Iperbole"/>
+        <Class IRI="#Metaphor"/>
+        <Class IRI="#Methonomy"/>
+        <Class IRI="#Synecdoche"/>
+    </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Irregular"/>
         <Class IRI="#Regular"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Mothertongue"/>
+        <Class IRI="#SecondLanguage"/>
+        <Class IRI="#ThirdLanguage"/>
     </DisjointClasses>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasHairColor"/>
@@ -439,12 +882,12 @@
         <Class IRI="#Stereotype"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasHairColor"/>
+        <ObjectProperty IRI="#hasAttribute"/>
         <Class IRI="#Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasPersonalTarget"/>
-        <Class IRI="#NLStatement"/>
+        <ObjectProperty IRI="#hasHairColor"/>
+        <Class IRI="#Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasPoliticalStatus"/>
@@ -468,7 +911,15 @@
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#generalizesDimension"/>
-        <Class IRI="#Dimension"/>
+        <Class IRI="#PersonAttributes"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAttribute"/>
+        <Class IRI="#Citizen"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAttribute"/>
+        <Class IRI="#PersonAttributes"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasHairColor"/>
@@ -480,7 +931,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasPoliticalStatus"/>
-        <Class IRI="#PoliticalStatus"/>
+        <Class IRI="#PersonalStatus"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isExpressedIn"/>
@@ -522,9 +973,18 @@
         <DataProperty IRI="#polarity"/>
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NonBinary</IRI>
+        <Literal>A person who doesn&apos;t recognize himself in a gender</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PersonalStatus</IRI>
+        <Literal>The status of a person</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
-
