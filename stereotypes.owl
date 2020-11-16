@@ -13,6 +13,9 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
+        <Class IRI="http://purl.org/dc/terms/MediaType"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Adjective"/>
     </Declaration>
     <Declaration>
@@ -52,10 +55,7 @@
         <Class IRI="#ByBirthCitizen"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Channel"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Child"/>
+        <Class IRI="#Categorization"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Christianity"/>
@@ -68,6 +68,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Citizen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CognitiveElement"/>
     </Declaration>
     <Declaration>
         <Class IRI="#CommunicativeElement"/>
@@ -88,7 +91,7 @@
         <Class IRI="#EconomicMigrant"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#EthnicMinorities"/>
+        <Class IRI="#EthnicOrigin"/>
     </Declaration>
     <Declaration>
         <Class IRI="#FacebookPost"/>
@@ -136,6 +139,18 @@
         <Class IRI="#Image"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#ImmigrantGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImmigrantsAreAnimals"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImmigrantsAreViolent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InGroup"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#International"/>
     </Declaration>
     <Declaration>
@@ -143,9 +158,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Iperbole"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Irregular"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Islam"/>
@@ -158,9 +170,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#LeftwingStance"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LegalStatus"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Lesbian"/>
@@ -193,6 +202,9 @@
         <Class IRI="#Mothertongue"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#MuslimSubdueWomen"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#NLExpression"/>
     </Declaration>
     <Declaration>
@@ -220,10 +232,10 @@
         <Class IRI="#OnlineNewspaper"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Person"/>
+        <Class IRI="#OutGroup"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#PersonAttributes"/>
+        <Class IRI="#PersonAttribute"/>
     </Declaration>
     <Declaration>
         <Class IRI="#PersonalStatus"/>
@@ -244,6 +256,9 @@
         <Class IRI="#Prejudice"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#ProfessedReligion"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#ProperNoun"/>
     </Declaration>
     <Declaration>
@@ -259,10 +274,7 @@
         <Class IRI="#Refugee"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Regular"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Religion"/>
+        <Class IRI="#ReligiousMinority"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ReligiousMinorities"/>
@@ -307,6 +319,12 @@
         <Class IRI="#Stereotype"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#StereotypeAboutImmigrants"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StereotypeAboutReligionMinorities"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Synecdoche"/>
     </Declaration>
     <Declaration>
@@ -334,7 +352,7 @@
         <Class IRI="#Video"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#VulnerableGroupToDiscrimination"/>
+        <Class IRI="#VulnerableGroup"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Web"/>
@@ -346,13 +364,43 @@
         <Class IRI="#Word"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Group"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Person"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/dc/terms/created"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/dc/terms/creator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#addressedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#believesIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#categorizeAs"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#generalizesDimension"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasAttribute"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasHairColor"/>
+        <ObjectProperty IRI="#hasEthnicOrigin"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMember"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasPersonalTarget"/>
@@ -364,16 +412,13 @@
         <ObjectProperty IRI="#hasPoliticalStatus"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasSkinColor"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#ifOfEthnicity"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isBelieverOf"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#isExpressedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMemberOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#perceivedAs"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#postedOnSocialMediaPlatform"/>
@@ -385,24 +430,111 @@
         <ObjectProperty IRI="#saidOn"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="http://xmlns.com/foaf/spec/#term_member"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#dateTime"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasAge"/>
+        <DataProperty IRI="#hasText"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#language"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#polarity"/>
+        <DataProperty IRI="#negativePolarity"/>
     </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://xmlns.com/foaf/spec/#term_age"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gigi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ImmVi_01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#gruppoEsempio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#immAn_01"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#ImmigrantGroup"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasMember"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://xmlns.com/foaf/spec/#term_Person"/>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="#hasAttribute"/>
+                    <Class IRI="#NonCitizen"/>
+                </ObjectAllValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MuslimSubdueWomen"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#addressedTo"/>
+                <Class IRI="#ReligiousMinority"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#categorizeAs"/>
+                <Class IRI="#OutGroup"/>
+            </ObjectAllValuesFrom>
+            <DataAllValuesFrom>
+                <DataProperty IRI="#negativePolarity"/>
+                <DataOneOf>
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+                </DataOneOf>
+            </DataAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ReligiousMinority"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasMember"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://xmlns.com/foaf/spec/#term_Person"/>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="#hasAttribute"/>
+                    <Class IRI="#ProfessedReligion"/>
+                </ObjectAllValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#StereotypeAboutImmigrants"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#addressedTo"/>
+                <Class IRI="#ImmigrantGroup"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#categorizeAs"/>
+                <Class IRI="#OutGroup"/>
+            </ObjectAllValuesFrom>
+            <DataAllValuesFrom>
+                <DataProperty IRI="#negativePolarity"/>
+                <DataOneOf>
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+                </DataOneOf>
+            </DataAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#Adjective"/>
         <Class IRI="#Word"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Age"/>
-        <Class IRI="#PersonAttributes"/>
+        <Class IRI="#PersonAttribute"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Analogy"/>
@@ -422,7 +554,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Atheism"/>
-        <Class IRI="#Religion"/>
+        <Class IRI="#ProfessedReligion"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Audio"/>
@@ -449,16 +581,12 @@
         <Class IRI="#Citizen"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Child"/>
-        <Class IRI="#Age"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Christianity"/>
-        <Class IRI="#Religion"/>
+        <Class IRI="#ProfessedReligion"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Church"/>
-        <Class IRI="#Group"/>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Organization"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CisgenderHeterosexual"/>
@@ -482,15 +610,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Disable"/>
-        <Class IRI="#VulnerableGroupToDiscrimination"/>
+        <Class IRI="#VulnerableGroup"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#EconomicMigrant"/>
         <Class IRI="#NonCitizen"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#EthnicMinorities"/>
-        <Class IRI="#VulnerableGroupToDiscrimination"/>
+        <Class IRI="#EthnicOrigin"/>
+        <Class IRI="#PersonAttribute"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#FacebookPost"/>
@@ -510,7 +638,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Gender"/>
-        <Class IRI="#PersonAttributes"/>
+        <Class IRI="#PersonAttribute"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Generalization"/>
@@ -522,7 +650,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Hebraism"/>
-        <Class IRI="#Religion"/>
+        <Class IRI="#ProfessedReligion"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Height"/>
@@ -530,11 +658,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Hinduism"/>
-        <Class IRI="#Religion"/>
+        <Class IRI="#ProfessedReligion"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HomeCountry"/>
-        <Class IRI="#PersonAttributes"/>
+        <Class IRI="#PersonAttribute"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Idiom"/>
@@ -543,6 +671,22 @@
     <SubClassOf>
         <Class IRI="#Image"/>
         <Class IRI="#CommunicativeElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImmigrantGroup"/>
+        <Class IRI="#VulnerableGroup"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImmigrantsAreAnimals"/>
+        <Class IRI="#StereotypeAboutImmigrants"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImmigrantsAreViolent"/>
+        <Class IRI="#StereotypeAboutImmigrants"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InGroup"/>
+        <Class IRI="#Categorization"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#International"/>
@@ -557,12 +701,16 @@
         <Class IRI="#FigureOfSpeech"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Irregular"/>
-        <Class IRI="#LegalStatus"/>
+        <Class IRI="#Islam"/>
+        <Class IRI="#ProfessedReligion"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Islam"/>
-        <Class IRI="#Religion"/>
+        <Class IRI="#LGBTQI"/>
+        <Class IRI="#VulnerableGroup"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LeftWing"/>
+        <Class IRI="#PoliticalParty"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#LGBTQI"/>
@@ -575,10 +723,6 @@
     <SubClassOf>
         <Class IRI="#LeftwingStance"/>
         <Class IRI="#PoliticalStance"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LegalStatus"/>
-        <Class IRI="#NonCitizen"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Lesbian"/>
@@ -617,6 +761,10 @@
         <Class IRI="#SpokenLanguage"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#MuslimSubdueWomen"/>
+        <Class IRI="#StereotypeAboutReligionMinorities"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#NLExpression"/>
         <Class IRI="#CommunicativeElement"/>
     </SubClassOf>
@@ -630,11 +778,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Newspaper"/>
-        <Class IRI="#Channel"/>
+        <Class IRI="http://purl.org/dc/terms/MediaType"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Non-ProfitAssociation"/>
-        <Class IRI="#Group"/>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Organization"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#NonBinary"/>
@@ -653,24 +801,28 @@
         <Class IRI="#Web"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PersonalStatus"/>
-        <Class IRI="#PersonAttributes"/>
+        <Class IRI="#OutGroup"/>
+        <Class IRI="#Categorization"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PhysicalTraits"/>
-        <Class IRI="#PersonAttributes"/>
+        <Class IRI="#PersonAttribute"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PoliticalParty"/>
-        <Class IRI="#Group"/>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Organization"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PoliticalStance"/>
-        <Class IRI="#PersonAttributes"/>
+        <Class IRI="#PersonAttribute"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Populist"/>
         <Class IRI="#PoliticalParty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProfessedReligion"/>
+        <Class IRI="#PersonAttribute"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ProperNoun"/>
@@ -682,7 +834,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Radio"/>
-        <Class IRI="#Channel"/>
+        <Class IRI="http://purl.org/dc/terms/MediaType"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Reformist"/>
@@ -693,16 +845,8 @@
         <Class IRI="#NonCitizen"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Regular"/>
-        <Class IRI="#LegalStatus"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Religion"/>
-        <Class IRI="#PersonAttributes"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ReligiousMinorities"/>
-        <Class IRI="#VulnerableGroupToDiscrimination"/>
+        <Class IRI="#ReligiousMinority"/>
+        <Class IRI="#VulnerableGroup"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Retweet"/>
@@ -718,7 +862,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Roma"/>
-        <Class IRI="#VulnerableGroupToDiscrimination"/>
+        <Class IRI="#VulnerableGroup"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SchengenCitizen"/>
@@ -730,7 +874,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SexualOrientation"/>
-        <Class IRI="#PersonAttributes"/>
+        <Class IRI="#PersonAttribute"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SkinColor"/>
@@ -741,12 +885,24 @@
         <Class IRI="#Web"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#SocialMediaPost"/>
+        <Class IRI="#Web"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#SpokenLanguage"/>
-        <Class IRI="#PersonAttributes"/>
+        <Class IRI="#PersonAttribute"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SpokenUtterance"/>
         <Class IRI="#NLExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StereotypeAboutImmigrants"/>
+        <Class IRI="#Stereotype"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StereotypeAboutReligionMinorities"/>
+        <Class IRI="#Stereotype"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Synecdoche"/>
@@ -754,7 +910,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Television"/>
-        <Class IRI="#Channel"/>
+        <Class IRI="http://purl.org/dc/terms/MediaType"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Text"/>
@@ -766,7 +922,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#TradeUnion"/>
-        <Class IRI="#Group"/>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Organization"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Transgender"/>
@@ -785,32 +941,33 @@
         <Class IRI="#CommunicativeElement"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#VulnerableGroupToDiscrimination"/>
-        <Class IRI="#Group"/>
+        <Class IRI="#VulnerableGroup"/>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Group"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Web"/>
-        <Class IRI="#Channel"/>
+        <Class IRI="http://purl.org/dc/terms/MediaType"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Women"/>
-        <Class IRI="#VulnerableGroupToDiscrimination"/>
+        <Class IRI="#VulnerableGroup"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Word"/>
         <Class IRI="#LinguisticsFeature"/>
     </SubClassOf>
-    <DisjointClasses>
-        <Class IRI="#Age"/>
-        <Class IRI="#Gender"/>
-        <Class IRI="#HomeCountry"/>
-        <Class IRI="#PersonalStatus"/>
-        <Class IRI="#PhysicalTraits"/>
-        <Class IRI="#PoliticalStance"/>
-        <Class IRI="#Religion"/>
-        <Class IRI="#SexualOrientation"/>
-        <Class IRI="#SpokenLanguage"/>
-    </DisjointClasses>
+    <SubClassOf>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Group"/>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Organization"/>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Person"/>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Agent"/>
+    </SubClassOf>
     <DisjointClasses>
         <Class IRI="#Asexual"/>
         <Class IRI="#Bisexual"/>
@@ -838,6 +995,14 @@
         <Class IRI="#RightWing"/>
     </DisjointClasses>
     <DisjointClasses>
+        <Class IRI="#ImmigrantsAreAnimals"/>
+        <Class IRI="#ImmigrantsAreViolent"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#InGroup"/>
+        <Class IRI="#OutGroup"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#International"/>
         <Class IRI="#Local"/>
         <Class IRI="#National"/>
@@ -849,49 +1014,88 @@
         <Class IRI="#Synecdoche"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#Irregular"/>
-        <Class IRI="#Regular"/>
-    </DisjointClasses>
-    <DisjointClasses>
         <Class IRI="#Mothertongue"/>
         <Class IRI="#SecondLanguage"/>
         <Class IRI="#ThirdLanguage"/>
     </DisjointClasses>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#hasHairColor"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
+    <DisjointClasses>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Group"/>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Organization"/>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Person"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <Class IRI="http://xmlns.com/foaf/spec/#term_Person"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasAttribute"/>
+                <Class IRI="#NonCitizen"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="#Gigi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ImmigrantsAreViolent"/>
+        <NamedIndividual IRI="#ImmVi_01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ImmigrantsAreAnimals"/>
+        <NamedIndividual IRI="#immAn_01"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMember"/>
+        <NamedIndividual IRI="#gruppoEsempio"/>
+        <NamedIndividual IRI="#Gigi"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <NamedIndividual IRI="#ImmVi_01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://twitter.com/C_Randieri/status/1039917846137131008</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasText"/>
+        <NamedIndividual IRI="#ImmVi_01"/>
+        <Literal>gli stranieri aggrediscono gli italiani, stuprano e a volte ammazzano le ragazzine qui in Italia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasText"/>
+        <NamedIndividual IRI="#immAn_01"/>
+        <Literal>alcuni immigrati creano ancora forti problemi a dire il poco &quot;animaleschi&quot;</Literal>
+    </DataPropertyAssertion>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#hasMember"/>
+        <ObjectProperty IRI="http://xmlns.com/foaf/spec/#term_member"/>
+    </EquivalentObjectProperties>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasPhysicalTrait"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#ifOfEthnicity"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#isBelieverOf"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#isExpressedIn"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://purl.org/dc/terms/created"/>
+        <ObjectProperty IRI="http://purl.org/dc/terms/creator"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasMember"/>
+        <ObjectProperty IRI="#isMemberOf"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.org/dc/terms/created"/>
+        <Class IRI="#Stereotype"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.org/dc/terms/creator"/>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Agent"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#generalizesDimension"/>
         <Class IRI="#Stereotype"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasAttribute"/>
-        <Class IRI="#Person"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasHairColor"/>
-        <Class IRI="#Person"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasPoliticalStatus"/>
-        <Class IRI="#Person"/>
+        <ObjectProperty IRI="#hasEthnicOrigin"/>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isExpressedIn"/>
@@ -909,9 +1113,25 @@
         <ObjectProperty IRI="#saidOn"/>
         <Class IRI="#SpokenUtterance"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://xmlns.com/foaf/spec/#term_member"/>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Group"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.org/dc/terms/created"/>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.org/dc/terms/creator"/>
+        <Class IRI="#Stereotype"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#believesIn"/>
+        <Class IRI="#ProfessedReligion"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#generalizesDimension"/>
-        <Class IRI="#PersonAttributes"/>
+        <Class IRI="#PersonAttribute"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasAttribute"/>
@@ -919,15 +1139,11 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasAttribute"/>
-        <Class IRI="#PersonAttributes"/>
+        <Class IRI="#PersonAttribute"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasHairColor"/>
-        <Class IRI="#HairColor"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasPersonalTarget"/>
-        <Class IRI="#Person"/>
+        <ObjectProperty IRI="#hasEthnicOrigin"/>
+        <Class IRI="#PersonalStatus"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasPoliticalStatus"/>
@@ -942,8 +1158,8 @@
         <Class IRI="#SocialMediaPlatform"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#saidOn"/>
-        <Class IRI="#Person"/>
+        <ObjectProperty IRI="http://xmlns.com/foaf/spec/#term_member"/>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Person"/>
     </ObjectPropertyRange>
     <DataPropertyDomain>
         <DataProperty IRI="#dateTime"/>
@@ -958,25 +1174,52 @@
         <Class IRI="#SpokenUtterance"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#polarity"/>
+        <DataProperty IRI="#negativePolarity"/>
         <Class IRI="#Stereotype"/>
     </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://xmlns.com/foaf/spec/#term_age"/>
+        <Class IRI="http://xmlns.com/foaf/spec/#term_Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#dateTime"/>
         <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasText"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#language"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#polarity"/>
-        <Datatype abbreviatedIRI="rdfs:Literal"/>
+        <DataProperty IRI="#negativePolarity"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://xmlns.com/foaf/spec/#term_age"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CommunicativeElement</IRI>
+        <Literal>Do we convert this to DC Types?
+https://www.dublincore.org/specifications/dublin-core/dcmi-type-vocabulary/</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#NonBinary</IRI>
         <Literal>A person who doesn&apos;t recognize himself in a gender</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PersonalStatus</IRI>
+        <Literal>Come si fa a codificare lo status politico di una persona senza specificare un paese target e un paese di provenienza?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
