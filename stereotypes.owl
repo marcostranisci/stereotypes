@@ -112,6 +112,9 @@
         <Class IRI="#Generalization"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Group"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#HairColor"/>
     </Declaration>
     <Declaration>
@@ -272,6 +275,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#ReligiousMinority"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReligiousMinorities"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Retweet"/>
@@ -701,6 +707,14 @@
     <SubClassOf>
         <Class IRI="#LGBTQI"/>
         <Class IRI="#VulnerableGroup"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LeftWing"/>
+        <Class IRI="#PoliticalParty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LGBTQI"/>
+        <Class IRI="#VulnerableGroupToDiscrimination"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#LeftWing"/>
