@@ -1,1232 +1,1798 @@
 <?xml version="1.0"?>
-<Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://stereotypes.di.unito.it/stereotypes.owl"
+<rdf:RDF xmlns="http://stereotypes.di.unito.it/stereotypes#"
+     xml:base="http://stereotypes.di.unito.it/stereotypes"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:DUL.="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+     xmlns:core="http://purl.org/vocab/frbr/core#"
+     xmlns:dcam="http://purl.org/dc/dcam/"
+     xmlns:fabi="http://purl.org/spar/fabio/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://stereotypes.di.unito.it/stereotypes.owl">
-    <Prefix name="" IRI="http://stereotypes.di.unito.it/stereotypes.owl"/>
-    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Declaration>
-        <Class IRI="http://purl.org/dc/terms/MediaType"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Adjective"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Age"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Analogy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Apolide"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Asexual"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#AsylumSeeker"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Atheism"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Audio"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#AuthoritarianStance"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Bisexual"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Blog"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ByAquisitionCitizen"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ByBirthCitizen"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Categorization"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Christianity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Church"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#CisgenderHeterosexual"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Citizen"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#CognitiveElement"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#CommunicativeElement"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Communist"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Conservative"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ConservativeStance"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Disable"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#EconomicMigrant"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#EthnicOrigin"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#FacebookPost"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Female"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#FigureOfSpeech"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Gay"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Gender"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Generalization"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Group"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#HairColor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Headline"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Hebraism"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Height"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Hinduism"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#HomeCountry"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Idiom"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Image"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ImmigrantGroup"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ImmigrantsAreAnimals"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ImmigrantsAreViolent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#InGroup"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#International"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Intersexual"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Iperbole"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Islam"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LGBTQI"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LeftWing"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LeftwingStance"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lesbian"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Liberal"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LinguisticsFeature"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Local"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lutheran"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#MWE"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Male"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Metaphor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Methonomy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Mothertongue"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#MuslimSubdueWomen"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#NLExpression"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#National"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Nationalist"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Newspaper"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Non-ProfitAssociation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#NonBinary"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#NonCitizen"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Noun"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OnlineNewspaper"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OutGroup"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PersonAttribute"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PersonalStatus"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PhysicalTraits"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PoliticalParty"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PoliticalStance"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Populist"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Prejudice"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ProfessedReligion"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ProperNoun"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Queer"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Radio"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Reformist"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Refugee"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ReligiousMinority"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ReligiousMinorities"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Retweet"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#RightWing"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#RightwingStance"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Roma"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SchengenCitizen"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SecondLanguage"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SexualOrientation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SkinColor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SocialMediaPlatform"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SocialMediaPost"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SpokenLanguage"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SpokenUtterance"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Stereotype"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#StereotypeAboutImmigrants"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#StereotypeAboutReligionMinorities"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Synecdoche"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Television"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Text"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ThirdLanguage"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#TradeUnion"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Transgender"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Tweet"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Verb"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Video"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#VulnerableGroup"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Web"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Women"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Word"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://xmlns.com/foaf/spec/#term_Agent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://xmlns.com/foaf/spec/#term_Group"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://xmlns.com/foaf/spec/#term_Organization"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://xmlns.com/foaf/spec/#term_Person"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://purl.org/dc/terms/created"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://purl.org/dc/terms/creator"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#addressedTo"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#believesIn"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#categorizeAs"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#generalizesDimension"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasAttribute"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasEthnicOrigin"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasMember"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasPersonalTarget"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasPhysicalTrait"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasPoliticalStatus"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isExpressedIn"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isMemberOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#perceivedAs"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#postedOnSocialMediaPlatform"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#publishedBy"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#saidOn"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://xmlns.com/foaf/spec/#term_member"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://purl.org/dc/elements/1.1/source"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#dateTime"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasText"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#language"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#negativePolarity"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://xmlns.com/foaf/spec/#term_age"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Gigi"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#ImmVi_01"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#gruppoEsempio"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#immAn_01"/>
-    </Declaration>
-    <EquivalentClasses>
-        <Class IRI="#ImmigrantGroup"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasMember"/>
-            <ObjectIntersectionOf>
-                <Class IRI="http://xmlns.com/foaf/spec/#term_Person"/>
-                <ObjectAllValuesFrom>
-                    <ObjectProperty IRI="#hasAttribute"/>
-                    <Class IRI="#NonCitizen"/>
-                </ObjectAllValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#MuslimSubdueWomen"/>
-        <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#addressedTo"/>
-                <Class IRI="#ReligiousMinority"/>
-            </ObjectSomeValuesFrom>
-            <ObjectAllValuesFrom>
-                <ObjectProperty IRI="#categorizeAs"/>
-                <Class IRI="#OutGroup"/>
-            </ObjectAllValuesFrom>
-            <DataAllValuesFrom>
-                <DataProperty IRI="#negativePolarity"/>
-                <DataOneOf>
-                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
-                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
-                </DataOneOf>
-            </DataAllValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ReligiousMinority"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasMember"/>
-            <ObjectIntersectionOf>
-                <Class IRI="http://xmlns.com/foaf/spec/#term_Person"/>
-                <ObjectAllValuesFrom>
-                    <ObjectProperty IRI="#hasAttribute"/>
-                    <Class IRI="#ProfessedReligion"/>
-                </ObjectAllValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#StereotypeAboutImmigrants"/>
-        <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#addressedTo"/>
-                <Class IRI="#ImmigrantGroup"/>
-            </ObjectSomeValuesFrom>
-            <ObjectAllValuesFrom>
-                <ObjectProperty IRI="#categorizeAs"/>
-                <Class IRI="#OutGroup"/>
-            </ObjectAllValuesFrom>
-            <DataAllValuesFrom>
-                <DataProperty IRI="#negativePolarity"/>
-                <DataOneOf>
-                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
-                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
-                </DataOneOf>
-            </DataAllValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <SubClassOf>
-        <Class IRI="#Adjective"/>
-        <Class IRI="#Word"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Age"/>
-        <Class IRI="#PersonAttribute"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Analogy"/>
-        <Class IRI="#FigureOfSpeech"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Apolide"/>
-        <Class IRI="#NonCitizen"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Asexual"/>
-        <Class IRI="#SexualOrientation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#AsylumSeeker"/>
-        <Class IRI="#NonCitizen"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Atheism"/>
-        <Class IRI="#ProfessedReligion"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Audio"/>
-        <Class IRI="#CommunicativeElement"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#AuthoritarianStance"/>
-        <Class IRI="#PoliticalStance"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Bisexual"/>
-        <Class IRI="#SexualOrientation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Blog"/>
-        <Class IRI="#Web"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ByAquisitionCitizen"/>
-        <Class IRI="#Citizen"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ByBirthCitizen"/>
-        <Class IRI="#Citizen"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Christianity"/>
-        <Class IRI="#ProfessedReligion"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Church"/>
-        <Class IRI="http://xmlns.com/foaf/spec/#term_Organization"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#CisgenderHeterosexual"/>
-        <Class IRI="#SexualOrientation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Citizen"/>
-        <Class IRI="#PersonalStatus"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Communist"/>
-        <Class IRI="#PoliticalParty"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Conservative"/>
-        <Class IRI="#PoliticalParty"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ConservativeStance"/>
-        <Class IRI="#PoliticalStance"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Disable"/>
-        <Class IRI="#VulnerableGroup"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#EconomicMigrant"/>
-        <Class IRI="#NonCitizen"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#EthnicOrigin"/>
-        <Class IRI="#PersonAttribute"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#FacebookPost"/>
-        <Class IRI="#SocialMediaPost"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Female"/>
-        <Class IRI="#Gender"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#FigureOfSpeech"/>
-        <Class IRI="#LinguisticsFeature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Gay"/>
-        <Class IRI="#SexualOrientation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Gender"/>
-        <Class IRI="#PersonAttribute"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Generalization"/>
-        <Class IRI="#FigureOfSpeech"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#HairColor"/>
-        <Class IRI="#PhysicalTraits"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Hebraism"/>
-        <Class IRI="#ProfessedReligion"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Height"/>
-        <Class IRI="#PhysicalTraits"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Hinduism"/>
-        <Class IRI="#ProfessedReligion"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#HomeCountry"/>
-        <Class IRI="#PersonAttribute"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Idiom"/>
-        <Class IRI="#MWE"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Image"/>
-        <Class IRI="#CommunicativeElement"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ImmigrantGroup"/>
-        <Class IRI="#VulnerableGroup"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ImmigrantsAreAnimals"/>
-        <Class IRI="#StereotypeAboutImmigrants"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ImmigrantsAreViolent"/>
-        <Class IRI="#StereotypeAboutImmigrants"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#InGroup"/>
-        <Class IRI="#Categorization"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#International"/>
-        <Class IRI="#Non-ProfitAssociation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Intersexual"/>
-        <Class IRI="#SexualOrientation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Iperbole"/>
-        <Class IRI="#FigureOfSpeech"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Islam"/>
-        <Class IRI="#ProfessedReligion"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LGBTQI"/>
-        <Class IRI="#VulnerableGroup"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LeftWing"/>
-        <Class IRI="#PoliticalParty"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LGBTQI"/>
-        <Class IRI="#VulnerableGroupToDiscrimination"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LeftWing"/>
-        <Class IRI="#PoliticalParty"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LeftwingStance"/>
-        <Class IRI="#PoliticalStance"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Lesbian"/>
-        <Class IRI="#SexualOrientation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Liberal"/>
-        <Class IRI="#PoliticalParty"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Local"/>
-        <Class IRI="#Non-ProfitAssociation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Lutheran"/>
-        <Class IRI="#Christianity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#MWE"/>
-        <Class IRI="#LinguisticsFeature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Male"/>
-        <Class IRI="#Gender"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Metaphor"/>
-        <Class IRI="#FigureOfSpeech"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Methonomy"/>
-        <Class IRI="#FigureOfSpeech"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Mothertongue"/>
-        <Class IRI="#SpokenLanguage"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#MuslimSubdueWomen"/>
-        <Class IRI="#StereotypeAboutReligionMinorities"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NLExpression"/>
-        <Class IRI="#CommunicativeElement"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#National"/>
-        <Class IRI="#Non-ProfitAssociation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Nationalist"/>
-        <Class IRI="#PoliticalParty"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Newspaper"/>
-        <Class IRI="http://purl.org/dc/terms/MediaType"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Non-ProfitAssociation"/>
-        <Class IRI="http://xmlns.com/foaf/spec/#term_Organization"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NonBinary"/>
-        <Class IRI="#Gender"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NonCitizen"/>
-        <Class IRI="#PersonalStatus"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Noun"/>
-        <Class IRI="#Word"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OnlineNewspaper"/>
-        <Class IRI="#Web"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OutGroup"/>
-        <Class IRI="#Categorization"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#PhysicalTraits"/>
-        <Class IRI="#PersonAttribute"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#PoliticalParty"/>
-        <Class IRI="http://xmlns.com/foaf/spec/#term_Organization"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#PoliticalStance"/>
-        <Class IRI="#PersonAttribute"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Populist"/>
-        <Class IRI="#PoliticalParty"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ProfessedReligion"/>
-        <Class IRI="#PersonAttribute"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ProperNoun"/>
-        <Class IRI="#Word"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Queer"/>
-        <Class IRI="#SexualOrientation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Radio"/>
-        <Class IRI="http://purl.org/dc/terms/MediaType"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Reformist"/>
-        <Class IRI="#PoliticalParty"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Refugee"/>
-        <Class IRI="#NonCitizen"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ReligiousMinority"/>
-        <Class IRI="#VulnerableGroup"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Retweet"/>
-        <Class IRI="#Tweet"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#RightWing"/>
-        <Class IRI="#PoliticalParty"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#RightwingStance"/>
-        <Class IRI="#PoliticalStance"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Roma"/>
-        <Class IRI="#VulnerableGroup"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SchengenCitizen"/>
-        <Class IRI="#PersonalStatus"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SecondLanguage"/>
-        <Class IRI="#SpokenLanguage"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SexualOrientation"/>
-        <Class IRI="#PersonAttribute"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SkinColor"/>
-        <Class IRI="#PhysicalTraits"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SocialMediaPlatform"/>
-        <Class IRI="#Web"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SocialMediaPost"/>
-        <Class IRI="#Web"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SpokenLanguage"/>
-        <Class IRI="#PersonAttribute"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SpokenUtterance"/>
-        <Class IRI="#NLExpression"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#StereotypeAboutImmigrants"/>
-        <Class IRI="#Stereotype"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#StereotypeAboutReligionMinorities"/>
-        <Class IRI="#Stereotype"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Synecdoche"/>
-        <Class IRI="#FigureOfSpeech"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Television"/>
-        <Class IRI="http://purl.org/dc/terms/MediaType"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Text"/>
-        <Class IRI="#NLExpression"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ThirdLanguage"/>
-        <Class IRI="#SpokenLanguage"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#TradeUnion"/>
-        <Class IRI="http://xmlns.com/foaf/spec/#term_Organization"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Transgender"/>
-        <Class IRI="#SexualOrientation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Tweet"/>
-        <Class IRI="#SocialMediaPost"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Verb"/>
-        <Class IRI="#Word"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Video"/>
-        <Class IRI="#CommunicativeElement"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#VulnerableGroup"/>
-        <Class IRI="http://xmlns.com/foaf/spec/#term_Group"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Web"/>
-        <Class IRI="http://purl.org/dc/terms/MediaType"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Women"/>
-        <Class IRI="#VulnerableGroup"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Word"/>
-        <Class IRI="#LinguisticsFeature"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://xmlns.com/foaf/spec/#term_Group"/>
-        <Class IRI="http://xmlns.com/foaf/spec/#term_Agent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://xmlns.com/foaf/spec/#term_Organization"/>
-        <Class IRI="http://xmlns.com/foaf/spec/#term_Agent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://xmlns.com/foaf/spec/#term_Person"/>
-        <Class IRI="http://xmlns.com/foaf/spec/#term_Agent"/>
-    </SubClassOf>
-    <DisjointClasses>
-        <Class IRI="#Asexual"/>
-        <Class IRI="#Bisexual"/>
-        <Class IRI="#CisgenderHeterosexual"/>
-        <Class IRI="#Gay"/>
-        <Class IRI="#Intersexual"/>
-        <Class IRI="#Lesbian"/>
-        <Class IRI="#Queer"/>
-        <Class IRI="#Transgender"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Audio"/>
-        <Class IRI="#Image"/>
-        <Class IRI="#Text"/>
-        <Class IRI="#Video"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Communist"/>
-        <Class IRI="#Conservative"/>
-        <Class IRI="#LeftWing"/>
-        <Class IRI="#Liberal"/>
-        <Class IRI="#Nationalist"/>
-        <Class IRI="#Populist"/>
-        <Class IRI="#Reformist"/>
-        <Class IRI="#RightWing"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#ImmigrantsAreAnimals"/>
-        <Class IRI="#ImmigrantsAreViolent"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#InGroup"/>
-        <Class IRI="#OutGroup"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#International"/>
-        <Class IRI="#Local"/>
-        <Class IRI="#National"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Iperbole"/>
-        <Class IRI="#Metaphor"/>
-        <Class IRI="#Methonomy"/>
-        <Class IRI="#Synecdoche"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Mothertongue"/>
-        <Class IRI="#SecondLanguage"/>
-        <Class IRI="#ThirdLanguage"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="http://xmlns.com/foaf/spec/#term_Group"/>
-        <Class IRI="http://xmlns.com/foaf/spec/#term_Organization"/>
-        <Class IRI="http://xmlns.com/foaf/spec/#term_Person"/>
-    </DisjointClasses>
-    <ClassAssertion>
-        <ObjectIntersectionOf>
-            <Class IRI="http://xmlns.com/foaf/spec/#term_Person"/>
-            <ObjectAllValuesFrom>
-                <ObjectProperty IRI="#hasAttribute"/>
-                <Class IRI="#NonCitizen"/>
-            </ObjectAllValuesFrom>
-        </ObjectIntersectionOf>
-        <NamedIndividual IRI="#Gigi"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#ImmigrantsAreViolent"/>
-        <NamedIndividual IRI="#ImmVi_01"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#ImmigrantsAreAnimals"/>
-        <NamedIndividual IRI="#immAn_01"/>
-    </ClassAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasMember"/>
-        <NamedIndividual IRI="#gruppoEsempio"/>
-        <NamedIndividual IRI="#Gigi"/>
-    </ObjectPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://purl.org/dc/elements/1.1/source"/>
-        <NamedIndividual IRI="#ImmVi_01"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://twitter.com/C_Randieri/status/1039917846137131008</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasText"/>
-        <NamedIndividual IRI="#ImmVi_01"/>
-        <Literal>gli stranieri aggrediscono gli italiani, stuprano e a volte ammazzano le ragazzine qui in Italia</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasText"/>
-        <NamedIndividual IRI="#immAn_01"/>
-        <Literal>alcuni immigrati creano ancora forti problemi a dire il poco &quot;animaleschi&quot;</Literal>
-    </DataPropertyAssertion>
-    <EquivalentObjectProperties>
-        <ObjectProperty IRI="#hasMember"/>
-        <ObjectProperty IRI="http://xmlns.com/foaf/spec/#term_member"/>
-    </EquivalentObjectProperties>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#hasPhysicalTrait"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#isExpressedIn"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="http://purl.org/dc/terms/created"/>
-        <ObjectProperty IRI="http://purl.org/dc/terms/creator"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#hasMember"/>
-        <ObjectProperty IRI="#isMemberOf"/>
-    </InverseObjectProperties>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://purl.org/dc/terms/created"/>
-        <Class IRI="#Stereotype"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://purl.org/dc/terms/creator"/>
-        <Class IRI="http://xmlns.com/foaf/spec/#term_Agent"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#generalizesDimension"/>
-        <Class IRI="#Stereotype"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasEthnicOrigin"/>
-        <Class IRI="http://xmlns.com/foaf/spec/#term_Person"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isExpressedIn"/>
-        <Class IRI="#Stereotype"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#postedOnSocialMediaPlatform"/>
-        <Class IRI="#SocialMediaPost"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#publishedBy"/>
-        <Class IRI="#Headline"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#saidOn"/>
-        <Class IRI="#SpokenUtterance"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://xmlns.com/foaf/spec/#term_member"/>
-        <Class IRI="http://xmlns.com/foaf/spec/#term_Group"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://purl.org/dc/terms/created"/>
-        <Class IRI="http://xmlns.com/foaf/spec/#term_Agent"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://purl.org/dc/terms/creator"/>
-        <Class IRI="#Stereotype"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#believesIn"/>
-        <Class IRI="#ProfessedReligion"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#generalizesDimension"/>
-        <Class IRI="#PersonAttribute"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasAttribute"/>
-        <Class IRI="#Citizen"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasAttribute"/>
-        <Class IRI="#PersonAttribute"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasEthnicOrigin"/>
-        <Class IRI="#PersonalStatus"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasPoliticalStatus"/>
-        <Class IRI="#PersonalStatus"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isExpressedIn"/>
-        <Class IRI="#NLExpression"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#postedOnSocialMediaPlatform"/>
-        <Class IRI="#SocialMediaPlatform"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://xmlns.com/foaf/spec/#term_member"/>
-        <Class IRI="http://xmlns.com/foaf/spec/#term_Person"/>
-    </ObjectPropertyRange>
-    <DataPropertyDomain>
-        <DataProperty IRI="#dateTime"/>
-        <Class IRI="#Headline"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#dateTime"/>
-        <Class IRI="#SocialMediaPost"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#dateTime"/>
-        <Class IRI="#SpokenUtterance"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#negativePolarity"/>
-        <Class IRI="#Stereotype"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://xmlns.com/foaf/spec/#term_age"/>
-        <Class IRI="http://xmlns.com/foaf/spec/#term_Agent"/>
-    </DataPropertyDomain>
-    <DataPropertyRange>
-        <DataProperty IRI="http://purl.org/dc/elements/1.1/source"/>
-        <Datatype abbreviatedIRI="xsd:anyURI"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#dateTime"/>
-        <Datatype abbreviatedIRI="xsd:dateTime"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#hasText"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#language"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#negativePolarity"/>
-        <Datatype abbreviatedIRI="xsd:boolean"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="http://xmlns.com/foaf/spec/#term_age"/>
-        <Datatype abbreviatedIRI="xsd:integer"/>
-    </DataPropertyRange>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#CommunicativeElement</IRI>
-        <Literal>Do we convert this to DC Types?
-https://www.dublincore.org/specifications/dublin-core/dcmi-type-vocabulary/</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#NonBinary</IRI>
-        <Literal>A person who doesn&apos;t recognize himself in a gender</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#PersonalStatus</IRI>
-        <Literal>Come si fa a codificare lo status politico di una persona senza specificare un paese target e un paese di provenienza?</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#PersonalStatus</IRI>
-        <Literal>The status of a person</Literal>
-    </AnnotationAssertion>
-</Ontology>
+     xmlns:term="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://stereotypes.di.unito.it/stereotypes"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/dcam/memberOf -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/dcam/memberOf"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/created">
+        <owl:inverseOf rdf:resource="http://purl.org/dc/terms/creator"/>
+        <rdfs:domain rdf:resource="http://stereotypes.di.unito.it/stereotypes#SocialMediaPost"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#Organization"/>
+                    <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#Person"/>
+                    <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes/#Group"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/creator">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#Organization"/>
+                    <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#Person"/>
+                    <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes/#Group"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://stereotypes.di.unito.it/stereotypes#SocialMediaPost"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/vocab/frbr/core#embodiment -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/vocab/frbr/core#embodiment">
+        <owl:inverseOf rdf:resource="http://purl.org/vocab/frbr/core#embodimentOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://stereotypes.di.unito.it/stereotypes#MediaType"/>
+        <rdfs:range rdf:resource="http://purl.org/spar/fabio/Manifestation"/>
+        <rdfs:comment>A manifestation that embodies an expression</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/vocab/frbr/core#embodimentOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/vocab/frbr/core#embodimentOf">
+        <rdfs:domain rdf:resource="http://purl.org/spar/fabio/Manifestation"/>
+        <rdfs:range rdf:resource="http://stereotypes.di.unito.it/stereotypes#MediaType"/>
+        <rdfs:comment>An expression that is embodied by a manifestation</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#LinguisticEmbodiment -->
+
+    <owl:ObjectProperty rdf:about="http://stereotypes.di.unito.it/stereotypes#LinguisticEmbodiment">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/frbr/core#embodimentOf"/>
+        <rdfs:domain rdf:resource="http://stereotypes.di.unito.it/stereotypes#Stereotype"/>
+        <rdfs:range rdf:resource="http://stereotypes.di.unito.it/stereotypes#LinguisticsFeature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#categorizeAs -->
+
+    <owl:ObjectProperty rdf:about="http://stereotypes.di.unito.it/stereotypes#categorizeAs"/>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#hasAttribute -->
+
+    <owl:ObjectProperty rdf:about="http://stereotypes.di.unito.it/stereotypes#hasAttribute"/>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#hasDiscreditForm -->
+
+    <owl:ObjectProperty rdf:about="http://stereotypes.di.unito.it/stereotypes#hasDiscreditForm">
+        <rdfs:domain rdf:resource="http://stereotypes.di.unito.it/stereotypes#Prejudice"/>
+        <rdfs:range rdf:resource="http://stereotypes.di.unito.it/stereotypes#DiscreditForm"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#hasMember -->
+
+    <owl:ObjectProperty rdf:about="http://stereotypes.di.unito.it/stereotypes#hasMember">
+        <owl:equivalentProperty rdf:resource="http://stereotypes.di.unito.it/stereotypes#member"/>
+        <owl:inverseOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#isMemberOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://stereotypes.di.unito.it/stereotypes#hasRole">
+        <owl:inverseOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#isRoleOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#Organization"/>
+                    <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#Person"/>
+                    <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes/#Group"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://stereotypes.di.unito.it/stereotypes#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#hasTarget -->
+
+    <owl:ObjectProperty rdf:about="http://stereotypes.di.unito.it/stereotypes#hasTarget">
+        <owl:inverseOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#isTargetOf"/>
+        <rdfs:range rdf:resource="http://stereotypes.di.unito.it/stereotypes/#Group"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#isBorn -->
+
+    <owl:ObjectProperty rdf:about="http://stereotypes.di.unito.it/stereotypes#isBorn"/>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#isExpressed -->
+
+    <owl:ObjectProperty rdf:about="http://stereotypes.di.unito.it/stereotypes#isExpressed">
+        <owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#expresses"/>
+        <rdfs:domain rdf:resource="http://stereotypes.di.unito.it/stereotypes#Stereotype"/>
+        <rdfs:range rdf:resource="http://stereotypes.di.unito.it/stereotypes#MediaType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#isMemberOf -->
+
+    <owl:ObjectProperty rdf:about="http://stereotypes.di.unito.it/stereotypes#isMemberOf"/>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#isPublished -->
+
+    <owl:ObjectProperty rdf:about="http://stereotypes.di.unito.it/stereotypes#isPublished">
+        <rdfs:domain rdf:resource="http://stereotypes.di.unito.it/stereotypes#Stereotype"/>
+        <rdfs:range rdf:resource="http://purl.org/spar/fabio/Manifestation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#isRoleOf -->
+
+    <owl:ObjectProperty rdf:about="http://stereotypes.di.unito.it/stereotypes#isRoleOf">
+        <rdfs:domain rdf:resource="http://stereotypes.di.unito.it/stereotypes#Role"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#Organization"/>
+                    <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#Person"/>
+                    <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes/#Group"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#isTargetOf -->
+
+    <owl:ObjectProperty rdf:about="http://stereotypes.di.unito.it/stereotypes#isTargetOf">
+        <rdfs:domain rdf:resource="http://stereotypes.di.unito.it/stereotypes/#Group"/>
+        <rdfs:range rdf:resource="http://stereotypes.di.unito.it/stereotypes#Stereotype"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#member -->
+
+    <owl:ObjectProperty rdf:about="http://stereotypes.di.unito.it/stereotypes#member">
+        <rdfs:domain rdf:resource="http://stereotypes.di.unito.it/stereotypes/#Group"/>
+        <rdfs:range rdf:resource="http://stereotypes.di.unito.it/stereotypes#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#perceivedAs -->
+
+    <owl:ObjectProperty rdf:about="http://stereotypes.di.unito.it/stereotypes#perceivedAs"/>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#spread -->
+
+    <owl:ObjectProperty rdf:about="http://stereotypes.di.unito.it/stereotypes#spread">
+        <owl:inverseOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#spreadedBy"/>
+        <rdfs:domain rdf:resource="http://stereotypes.di.unito.it/stereotypes#Stereotype"/>
+        <rdfs:range rdf:resource="http://stereotypes.di.unito.it/stereotypes#Prejudice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#spreadedBy -->
+
+    <owl:ObjectProperty rdf:about="http://stereotypes.di.unito.it/stereotypes#spreadedBy">
+        <rdfs:domain rdf:resource="http://stereotypes.di.unito.it/stereotypes#Prejudice"/>
+        <rdfs:range rdf:resource="http://stereotypes.di.unito.it/stereotypes#Stereotype"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#expresses -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#expresses">
+        <rdfs:domain rdf:resource="http://stereotypes.di.unito.it/stereotypes#MediaType"/>
+        <rdfs:range rdf:resource="http://stereotypes.di.unito.it/stereotypes#Stereotype"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isExpressedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isExpressedBy">
+        <rdfs:domain rdf:resource="http://stereotypes.di.unito.it/stereotypes#Stereotype"/>
+        <rdfs:range rdf:resource="http://stereotypes.di.unito.it/stereotypes#MediaType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#activity -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#activity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#influencer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#agent -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#agent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#influencer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#generated -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#generated">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#influenced"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#influenced -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#influenced"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#influencer -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#influencer"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#qualifiedAssociation -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#qualifiedAssociation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#qualifiedInfluence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#qualifiedAttribution -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#qualifiedAttribution">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#qualifiedInfluence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#qualifiedGeneration -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#qualifiedGeneration">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#qualifiedInfluence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#qualifiedInfluence -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#qualifiedInfluence"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasAssociatedWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasAssociatedWith">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.w3.org/ns/prov#qualifiedAssociation"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/prov#agent"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasAttributedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasAttributedTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.w3.org/ns/prov#qualifiedAttribution"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/prov#agent"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasGeneratedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasGeneratedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.w3.org/ns/prov#qualifiedGeneration"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/prov#activity"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasInfluencedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/source">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#birthYear -->
+
+    <owl:DatatypeProperty rdf:about="http://stereotypes.di.unito.it/stereotypes#birthYear">
+        <rdfs:domain rdf:resource="http://stereotypes.di.unito.it/stereotypes#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#date -->
+
+    <owl:DatatypeProperty rdf:about="http://stereotypes.di.unito.it/stereotypes#date"/>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#hasId -->
+
+    <owl:DatatypeProperty rdf:about="http://stereotypes.di.unito.it/stereotypes#hasId"/>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#hasImage -->
+
+    <owl:DatatypeProperty rdf:about="http://stereotypes.di.unito.it/stereotypes#hasImage"/>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#hasPolarity -->
+
+    <owl:DatatypeProperty rdf:about="http://stereotypes.di.unito.it/stereotypes#hasPolarity">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#hasText -->
+
+    <owl:DatatypeProperty rdf:about="http://stereotypes.di.unito.it/stereotypes#hasText">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#language -->
+
+    <owl:DatatypeProperty rdf:about="http://stereotypes.di.unito.it/stereotypes#language">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/Collection -->
+
+    <owl:Class rdf:about="http://purl.org/dc/dcmitype/Collection">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#MediaType"/>
+        <dcam:memberOf rdf:resource="http://purl.org/dc/terms/DCMIType"/>
+        <term:description xml:lang="en">A collection is described as a group; its parts may also be separately described.</term:description>
+        <term:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</term:issued>
+        <rdfs:comment xml:lang="en">An aggregation of resources.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/dcmitype"/>
+        <rdfs:label xml:lang="en">Collection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/Dataset -->
+
+    <owl:Class rdf:about="http://purl.org/dc/dcmitype/Dataset">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#MediaType"/>
+        <dcam:memberOf rdf:resource="http://purl.org/dc/terms/DCMIType"/>
+        <term:description xml:lang="en">Examples include lists, tables, and databases.  A dataset may be useful for direct machine processing.</term:description>
+        <term:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</term:issued>
+        <rdfs:comment xml:lang="en">Data encoded in a defined structure.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/dcmitype"/>
+        <rdfs:label xml:lang="en">Dataset</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/Event -->
+
+    <owl:Class rdf:about="http://purl.org/dc/dcmitype/Event">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#MediaType"/>
+        <dcam:memberOf rdf:resource="http://purl.org/dc/terms/DCMIType"/>
+        <term:description xml:lang="en">Metadata for an event provides descriptive information that is the basis for discovery of the purpose, location, duration, and responsible agents associated with an event. Examples include an exhibition, webcast, conference, workshop, open day, performance, battle, trial, wedding, tea party, conflagration.</term:description>
+        <term:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</term:issued>
+        <rdfs:comment xml:lang="en">A non-persistent, time-based occurrence.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/dcmitype"/>
+        <rdfs:label xml:lang="en">Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/Image -->
+
+    <owl:Class rdf:about="http://purl.org/dc/dcmitype/Image">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#MediaType"/>
+        <dcam:memberOf rdf:resource="http://purl.org/dc/terms/DCMIType"/>
+        <term:description xml:lang="en">Examples include images and photographs of physical objects, paintings, prints, drawings, other images and graphics, animations and moving pictures, film, diagrams, maps, musical notation.  Note that Image may include both electronic and physical representations.</term:description>
+        <term:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</term:issued>
+        <rdfs:comment xml:lang="en">A visual representation other than text.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/dcmitype"/>
+        <rdfs:label xml:lang="en">Image</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/InteractiveResource -->
+
+    <owl:Class rdf:about="http://purl.org/dc/dcmitype/InteractiveResource">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#MediaType"/>
+        <dcam:memberOf rdf:resource="http://purl.org/dc/terms/DCMIType"/>
+        <term:description xml:lang="en">Examples include forms on Web pages, applets, multimedia learning objects, chat services, or virtual reality environments.</term:description>
+        <term:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</term:issued>
+        <rdfs:comment xml:lang="en">A resource requiring interaction from the user to be understood, executed, or experienced.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/dcmitype"/>
+        <rdfs:label xml:lang="en">Interactive Resource</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/MovingImage -->
+
+    <owl:Class rdf:about="http://purl.org/dc/dcmitype/MovingImage">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+        <dcam:memberOf rdf:resource="http://purl.org/dc/terms/DCMIType"/>
+        <term:description xml:lang="en">Examples include animations, movies, television programs, videos, zoetropes, or visual output from a simulation.  Instances of the type Moving Image must also be describable as instances of the broader type Image.</term:description>
+        <term:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2003-11-18</term:issued>
+        <rdfs:comment xml:lang="en">A series of visual representations imparting an impression of motion when shown in succession.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/dcmitype"/>
+        <rdfs:label xml:lang="en">Moving Image</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/PhysicalObject -->
+
+    <owl:Class rdf:about="http://purl.org/dc/dcmitype/PhysicalObject">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#MediaType"/>
+        <dcam:memberOf rdf:resource="http://purl.org/dc/terms/DCMIType"/>
+        <term:description xml:lang="en">Note that digital representations of, or surrogates for, these objects should use Image, Text or one of the other types.</term:description>
+        <term:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-07-13</term:issued>
+        <rdfs:comment xml:lang="en">An inanimate, three-dimensional object or substance.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/dcmitype"/>
+        <rdfs:label xml:lang="en">Physical Object</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/Service -->
+
+    <owl:Class rdf:about="http://purl.org/dc/dcmitype/Service">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#MediaType"/>
+        <dcam:memberOf rdf:resource="http://purl.org/dc/terms/DCMIType"/>
+        <term:description xml:lang="en">Examples include a photocopying service, a banking service, an authentication service, interlibrary loans, a Z39.50 or Web server.</term:description>
+        <term:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</term:issued>
+        <rdfs:comment xml:lang="en">A system that provides one or more functions.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/dcmitype"/>
+        <rdfs:label xml:lang="en">Service</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/Software -->
+
+    <owl:Class rdf:about="http://purl.org/dc/dcmitype/Software">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#MediaType"/>
+        <dcam:memberOf rdf:resource="http://purl.org/dc/terms/DCMIType"/>
+        <term:description xml:lang="en">Examples include a C source file, MS-Windows .exe executable, or Perl script.</term:description>
+        <term:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</term:issued>
+        <rdfs:comment xml:lang="en">A computer program in source or compiled form.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/dcmitype"/>
+        <rdfs:label xml:lang="en">Software</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/Sound -->
+
+    <owl:Class rdf:about="http://purl.org/dc/dcmitype/Sound">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#MediaType"/>
+        <dcam:memberOf rdf:resource="http://purl.org/dc/terms/DCMIType"/>
+        <term:description xml:lang="en">Examples include a music playback file format, an audio compact disc, and recorded speech or sounds.</term:description>
+        <term:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</term:issued>
+        <rdfs:comment xml:lang="en">A resource primarily intended to be heard.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/dcmitype"/>
+        <rdfs:label xml:lang="en">Sound</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/StillImage -->
+
+    <owl:Class rdf:about="http://purl.org/dc/dcmitype/StillImage">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+        <dcam:memberOf rdf:resource="http://purl.org/dc/terms/DCMIType"/>
+        <term:description xml:lang="en">Examples include paintings, drawings, graphic designs, plans and maps. Recommended best practice is to assign the type Text to images of textual materials. Instances of the type Still Image must also be describable as instances of the broader type Image.</term:description>
+        <term:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2003-11-18</term:issued>
+        <rdfs:comment xml:lang="en">A static visual representation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/dcmitype"/>
+        <rdfs:label xml:lang="en">Still Image</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/dcmitype/Text -->
+
+    <owl:Class rdf:about="http://purl.org/dc/dcmitype/Text">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#MediaType"/>
+        <dcam:memberOf rdf:resource="http://purl.org/dc/terms/DCMIType"/>
+        <term:description xml:lang="en">Examples include books, letters, dissertations, poems, newspapers, articles, archives of mailing lists. Note that facsimiles or images of texts are still of the genre Text.</term:description>
+        <term:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</term:issued>
+        <rdfs:comment xml:lang="en">A resource consisting primarily of words for reading.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/dcmitype"/>
+        <rdfs:label xml:lang="en">Text</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/AnalogManifestation -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/AnalogManifestation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Manifestation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Blog -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Blog">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/WebManifestation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/DigitalManifestation -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/DigitalManifestation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Manifestation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Manifestation -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Manifestation"/>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Microblog -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Microblog">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Blog"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/PrintObject -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/PrintObject">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/AnalogManifestation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/WebManifestation -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/WebManifestation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/DigitalManifestation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/WebPage -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/WebPage">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/WebManifestation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/WebSite -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/WebSite">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/WebManifestation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Wiki -->
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Wiki">
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/WebManifestation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Adjective -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#Adjective">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#Word"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#AdvertisingText -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#AdvertisingText">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#AffectiveCompetence -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#AffectiveCompetence">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#DiscreditForm"/>
+        <rdfs:comment>Affective competence: competence can also be affective when the immigrant is described as a numb, emotionless person, or a parasitic, describing the individual’s emotional features</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Age -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#Age">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#PersonAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Agent -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#Agent"/>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Analogy -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#Analogy">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#FigureOfSpeech"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Annotator -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#Annotator">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#Role"/>
+        <rdfs:comment>The agent who evaluated the presence of a stereotype in a message</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Benevolence -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#Benevolence">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#DiscreditForm"/>
+        <rdfs:comment>acting on behalf of their interests and not one’s own, being
+trustworthy, honest, ethical. In this case the immigrant will be seen as
+a thief, a rapist, a murderer, a criminal and a profiteer: an unreliable
+individual that behaves illegally.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Church -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#Church">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#City -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#City">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#CognitiveElement -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#CognitiveElement"/>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Communist -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#Communist">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#PoliticalParty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Competence -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#Competence">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#DiscreditForm"/>
+        <rdfs:comment>it emerges from the experience, knowledge and intelligence
+of an individual. On the competence dimension, an individual is negatively evaluated by accusing him of ignorance, stupidity, lack of prepa ration, incomprehensibility. The immigrant will thus be an imbecile, a goat.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Conservative -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#Conservative">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#PoliticalParty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Country -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#Country">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#DiscreditForm -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#DiscreditForm"/>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#DominanceDown -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#DominanceDown">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#DiscreditForm"/>
+        <rdfs:comment>in passive terms (Dominance Down):, immigrant can be described
+as a parasite, a nothing, a slacker who complains.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#DominanceUp -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#DominanceUp">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#DiscreditForm"/>
+        <rdfs:comment>in active terms (Dominance Up): when the immigrant is classified
+as overbearing, dangerous, aggressive, someone who also forcibly demands something he hasn’t deserved.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#EthnicOrigin -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#EthnicOrigin">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#PersonAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#FigureOfSpeech -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#FigureOfSpeech">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#LinguisticsFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Gender -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#Gender">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#PersonAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Generalization -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#Generalization">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#FigureOfSpeech"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#GroupStatus -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#GroupStatus"/>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#HomeCountry -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#HomeCountry">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#PersonAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Idiom -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#Idiom">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#MWE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#International -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#International">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#Non-ProfitAssociation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Iperbole -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#Iperbole">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#FigureOfSpeech"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#LeftWing -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#LeftWing">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#PoliticalParty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Liberal -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#Liberal">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#PoliticalParty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#LinguisticsFeature -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#LinguisticsFeature"/>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Local -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#Local">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#Non-ProfitAssociation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#MWE -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#MWE">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#LinguisticsFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#MediaType -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#MediaType"/>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Metaphor -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#Metaphor">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#FigureOfSpeech"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Methonomy -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#Methonomy">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#FigureOfSpeech"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#National -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#National">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#Non-ProfitAssociation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Nationalist -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#Nationalist">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#PoliticalParty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Non-ProfitAssociation -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#Non-ProfitAssociation">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#NonRispettanoBambini -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#NonRispettanoBambini">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#Stereotype"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#NonRispettanoDonne -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#NonRispettanoDonne">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#Stereotype"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#NonSonoDemocratici -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#NonSonoDemocratici">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#Stereotype"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#NonSonoUmani -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#NonSonoUmani">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#Stereotype"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Noun -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#Noun">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#Word"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Organization -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#Organization">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#OtherStereotype -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#OtherStereotype">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#Stereotype"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Person -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#Person">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#PersonAttribute -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#PersonAttribute"/>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#PhysicalFeatures -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#PhysicalFeatures">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#DiscreditForm"/>
+        <rdfs:comment>Physical features: dirty, sick, ugly, disgusting, black, dangerous for the health of the citizens.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#PhysicalTraits -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#PhysicalTraits">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#PersonAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Place -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#Place"/>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#PoliticalParty -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#PoliticalParty">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#PoliticalStance -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#PoliticalStance">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#PersonAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Populist -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#Populist">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#PoliticalParty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Prejudice -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#Prejudice"/>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#ProfessedReligion -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#ProfessedReligion">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#PersonAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#ProperNoun -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#ProperNoun">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#Word"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Reformist -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#Reformist">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#PoliticalParty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#RegionalAuthority -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#RegionalAuthority">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#RightWing -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#RightWing">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#PoliticalParty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Role -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#Role"/>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Sender -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#Sender">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#Role"/>
+        <rdfs:comment>The agent that sends a message</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#SexualOrientation -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#SexualOrientation">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#PersonAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Slur -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#Slur">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#LinguisticsFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#SocialMediaPost -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#SocialMediaPost">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#SonoApprofittatori -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#SonoApprofittatori">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#Stereotype"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#SonoArretrati -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#SonoArretrati">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#Stereotype"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#SonoCriminali -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#SonoCriminali">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#Stereotype"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#SonoDisonesti -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#SonoDisonesti">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#Stereotype"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#SonoPericolosi -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#SonoPericolosi">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#Stereotype"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#SonoPrivilegiati -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#SonoPrivilegiati">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#Stereotype"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#SpokenLanguage -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#SpokenLanguage">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#PersonAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Stereotype -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#Stereotype"/>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Synecdoche -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#Synecdoche">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#FigureOfSpeech"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Target -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#Target">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#Role"/>
+        <rdfs:comment>The agent that receives a message</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Topic -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#Topic">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#Role"/>
+        <rdfs:comment>The agent who is the topic of the message</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#TradeUnion -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#TradeUnion">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Verb -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#Verb">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#Word"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#VulnerableGroup -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#VulnerableGroup">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes/#Group"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Word -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes#Word">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#LinguisticsFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes/#Group -->
+
+    <owl:Class rdf:about="http://stereotypes.di.unito.it/stereotypes/#Group">
+        <rdfs:subClassOf rdf:resource="http://stereotypes.di.unito.it/stereotypes#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Activity -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Activity"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#ActivityInfluence -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#ActivityInfluence">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Influence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#AgentInfluence -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#AgentInfluence">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Influence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Association -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Association">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#AgentInfluence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Attribution -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Attribution">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#AgentInfluence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Delegation -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Delegation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#AgentInfluence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Generation -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Generation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#ActivityInfluence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Influence -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Influence"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Africans -->
+
+    <owl:NamedIndividual rdf:about="http://stereotypes.di.unito.it/stereotypes#Africans">
+        <rdf:type rdf:resource="http://stereotypes.di.unito.it/stereotypes#VulnerableGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Albanians -->
+
+    <owl:NamedIndividual rdf:about="http://stereotypes.di.unito.it/stereotypes#Albanians">
+        <rdf:type rdf:resource="http://stereotypes.di.unito.it/stereotypes#VulnerableGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Alessandra -->
+
+    <owl:NamedIndividual rdf:about="http://stereotypes.di.unito.it/stereotypes#Alessandra">
+        <rdf:type rdf:resource="http://stereotypes.di.unito.it/stereotypes#Person"/>
+        <hasAttribute rdf:resource="http://stereotypes.di.unito.it/stereotypes#Female"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Alfonso -->
+
+    <owl:NamedIndividual rdf:about="http://stereotypes.di.unito.it/stereotypes#Alfonso">
+        <rdf:type rdf:resource="http://stereotypes.di.unito.it/stereotypes#Person"/>
+        <hasAttribute rdf:resource="http://stereotypes.di.unito.it/stereotypes#Male"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Arabs -->
+
+    <owl:NamedIndividual rdf:about="http://stereotypes.di.unito.it/stereotypes#Arabs">
+        <rdf:type rdf:resource="http://stereotypes.di.unito.it/stereotypes#VulnerableGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Arthur -->
+
+    <owl:NamedIndividual rdf:about="http://stereotypes.di.unito.it/stereotypes#Arthur">
+        <rdf:type rdf:resource="http://stereotypes.di.unito.it/stereotypes#Person"/>
+        <hasAttribute rdf:resource="http://stereotypes.di.unito.it/stereotypes#Male"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#BlackPeople -->
+
+    <owl:NamedIndividual rdf:about="http://stereotypes.di.unito.it/stereotypes#BlackPeople">
+        <rdf:type rdf:resource="http://stereotypes.di.unito.it/stereotypes#VulnerableGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Congolese -->
+
+    <owl:NamedIndividual rdf:about="http://stereotypes.di.unito.it/stereotypes#Congolese">
+        <rdf:type rdf:resource="http://stereotypes.di.unito.it/stereotypes#VulnerableGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Cristina -->
+
+    <owl:NamedIndividual rdf:about="http://stereotypes.di.unito.it/stereotypes#Cristina">
+        <rdf:type rdf:resource="http://stereotypes.di.unito.it/stereotypes#Person"/>
+        <hasAttribute rdf:resource="http://stereotypes.di.unito.it/stereotypes#Female"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Female -->
+
+    <owl:NamedIndividual rdf:about="http://stereotypes.di.unito.it/stereotypes#Female">
+        <rdf:type rdf:resource="http://stereotypes.di.unito.it/stereotypes#Gender"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Giancarlo -->
+
+    <owl:NamedIndividual rdf:about="http://stereotypes.di.unito.it/stereotypes#Giancarlo">
+        <rdf:type rdf:resource="http://stereotypes.di.unito.it/stereotypes#Person"/>
+        <hasAttribute rdf:resource="http://stereotypes.di.unito.it/stereotypes#Male"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#InGroup -->
+
+    <owl:NamedIndividual rdf:about="http://stereotypes.di.unito.it/stereotypes#InGroup">
+        <rdf:type rdf:resource="http://stereotypes.di.unito.it/stereotypes#GroupStatus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Jews -->
+
+    <owl:NamedIndividual rdf:about="http://stereotypes.di.unito.it/stereotypes#Jews">
+        <rdf:type rdf:resource="http://stereotypes.di.unito.it/stereotypes#VulnerableGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Majority -->
+
+    <owl:NamedIndividual rdf:about="http://stereotypes.di.unito.it/stereotypes#Majority">
+        <rdf:type rdf:resource="http://stereotypes.di.unito.it/stereotypes#GroupStatus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Male -->
+
+    <owl:NamedIndividual rdf:about="http://stereotypes.di.unito.it/stereotypes#Male">
+        <rdf:type rdf:resource="http://stereotypes.di.unito.it/stereotypes#Gender"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Marco -->
+
+    <owl:NamedIndividual rdf:about="http://stereotypes.di.unito.it/stereotypes#Marco">
+        <rdf:type rdf:resource="http://stereotypes.di.unito.it/stereotypes#Person"/>
+        <hasAttribute rdf:resource="http://stereotypes.di.unito.it/stereotypes#Male"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Migrants -->
+
+    <owl:NamedIndividual rdf:about="http://stereotypes.di.unito.it/stereotypes#Migrants">
+        <rdf:type rdf:resource="http://stereotypes.di.unito.it/stereotypes#VulnerableGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Minority -->
+
+    <owl:NamedIndividual rdf:about="http://stereotypes.di.unito.it/stereotypes#Minority">
+        <rdf:type rdf:resource="http://stereotypes.di.unito.it/stereotypes#GroupStatus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Mirko -->
+
+    <owl:NamedIndividual rdf:about="http://stereotypes.di.unito.it/stereotypes#Mirko">
+        <rdf:type rdf:resource="http://stereotypes.di.unito.it/stereotypes#Person"/>
+        <hasAttribute rdf:resource="http://stereotypes.di.unito.it/stereotypes#Male"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Muslims -->
+
+    <owl:NamedIndividual rdf:about="http://stereotypes.di.unito.it/stereotypes#Muslims">
+        <rdf:type rdf:resource="http://stereotypes.di.unito.it/stereotypes#VulnerableGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Nigerians -->
+
+    <owl:NamedIndividual rdf:about="http://stereotypes.di.unito.it/stereotypes#Nigerians">
+        <rdf:type rdf:resource="http://stereotypes.di.unito.it/stereotypes#VulnerableGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#OutGroup -->
+
+    <owl:NamedIndividual rdf:about="http://stereotypes.di.unito.it/stereotypes#OutGroup">
+        <rdf:type rdf:resource="http://stereotypes.di.unito.it/stereotypes#GroupStatus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#RomaPeople -->
+
+    <owl:NamedIndividual rdf:about="http://stereotypes.di.unito.it/stereotypes#RomaPeople">
+        <rdf:type rdf:resource="http://stereotypes.di.unito.it/stereotypes#VulnerableGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Romanians -->
+
+    <owl:NamedIndividual rdf:about="http://stereotypes.di.unito.it/stereotypes#Romanians">
+        <rdf:type rdf:resource="http://stereotypes.di.unito.it/stereotypes#VulnerableGroup"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Salvatore -->
+
+    <owl:NamedIndividual rdf:about="http://stereotypes.di.unito.it/stereotypes#Salvatore">
+        <rdf:type rdf:resource="http://stereotypes.di.unito.it/stereotypes#Person"/>
+        <hasAttribute rdf:resource="http://stereotypes.di.unito.it/stereotypes#Male"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Twitter -->
+
+    <owl:NamedIndividual rdf:about="http://stereotypes.di.unito.it/stereotypes#Twitter">
+        <rdf:type rdf:resource="http://purl.org/spar/fabio/Microblog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Valerio -->
+
+    <owl:NamedIndividual rdf:about="http://stereotypes.di.unito.it/stereotypes#Valerio">
+        <rdf:type rdf:resource="http://stereotypes.di.unito.it/stereotypes#Person"/>
+        <hasAttribute rdf:resource="http://stereotypes.di.unito.it/stereotypes#Male"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://stereotypes.di.unito.it/stereotypes#Viviana -->
+
+    <owl:NamedIndividual rdf:about="http://stereotypes.di.unito.it/stereotypes#Viviana">
+        <rdf:type rdf:resource="http://stereotypes.di.unito.it/stereotypes#Person"/>
+        <hasAttribute rdf:resource="http://stereotypes.di.unito.it/stereotypes#Female"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.org/dc/dcmitype">
+        <term:title xml:lang="en">DCMI Type Vocabulary</term:title>
+        <term:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-06-14</term:modified>
+        <term:publisher rdf:resource="http://purl.org/dc/aboutdcmi#DCMI"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#AffectiveCompetence"/>
+            <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#Benevolence"/>
+            <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#Competence"/>
+            <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#DominanceDown"/>
+            <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#DominanceUp"/>
+            <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#PhysicalFeatures"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#Age"/>
+            <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#EthnicOrigin"/>
+            <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#Gender"/>
+            <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#HomeCountry"/>
+            <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#PhysicalTraits"/>
+            <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#PoliticalStance"/>
+            <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#ProfessedReligion"/>
+            <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#SexualOrientation"/>
+            <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#SpokenLanguage"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#City"/>
+            <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#Country"/>
+            <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#RegionalAuthority"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#Communist"/>
+            <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#Conservative"/>
+            <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#LeftWing"/>
+            <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#Liberal"/>
+            <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#Nationalist"/>
+            <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#Populist"/>
+            <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#Reformist"/>
+            <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#RightWing"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#International"/>
+            <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#Local"/>
+            <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#National"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#Iperbole"/>
+            <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#Metaphor"/>
+            <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#Methonomy"/>
+            <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#Synecdoche"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#Organization"/>
+            <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes#Person"/>
+            <rdf:Description rdf:about="http://stereotypes.di.unito.it/stereotypes/#Group"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
 
 
 
