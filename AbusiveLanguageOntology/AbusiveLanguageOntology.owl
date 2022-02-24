@@ -1,0 +1,1696 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://stereotypes.di.unito.it/stereotypes#"
+     xml:base="http://stereotypes.di.unito.it/stereotypes"
+     xmlns:oa="http://www.w3.org/ns/oa#"
+     xmlns:DUL="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dcam="http://purl.org/dc/dcam/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:term="http://purl.org/dc/terms/"
+     xmlns:stereotypes="http://hatespeech.di.unito.it/stereotypes#">
+    <owl:Ontology rdf:about="http://hatespeech.di.unito.it/stereotypes"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/dcam/memberOf -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/dcam/memberOf"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/ns/oa#hasBody -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/oa#hasBody"/>
+    
+
+
+    <!-- http://www.w3.org/ns/oa#hasTarget -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/oa#hasTarget"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#agent -->
+
+    <owl:ObjectProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#agent">
+        <owl:equivalentProperty rdf:resource="http://www.w3.org/ns/prov#agent"/>
+        <rdfs:domain rdf:resource="http://hatespeech.di.unito.it/stereotypes#Attribution"/>
+        <rdfs:range rdf:resource="http://hatespeech.di.unito.it/stereotypes#Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#categorizeAs -->
+
+    <owl:ObjectProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#categorizeAs"/>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#evokes -->
+
+    <owl:ObjectProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#evokes">
+        <owl:equivalentProperty rdf:resource="http://www.w3.org/ns/lemon/ontolex#evokes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#expresses -->
+
+    <owl:ObjectProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#expresses">
+        <owl:equivalentProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#expresses"/>
+        <owl:equivalentProperty rdf:resource="http://www.w3.org/ns/lemon/ontolex#evokes"/>
+        <rdfs:domain rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#hasAttribute -->
+
+    <owl:ObjectProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#hasAttribute"/>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#hasDiscreditForm -->
+
+    <owl:ObjectProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#hasDiscreditForm">
+        <rdfs:domain rdf:resource="http://hatespeech.di.unito.it/stereotypes#Prejudice"/>
+        <rdfs:range rdf:resource="http://hatespeech.di.unito.it/stereotypes#DiscreditForm"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#hasEmbodiment -->
+
+    <owl:ObjectProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#hasEmbodiment">
+        <owl:equivalentProperty rdf:resource="http://purl.org/vocab/frbr/core#embodiment"/>
+        <owl:inverseOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#isEmbodimentOf"/>
+        <rdfs:domain rdf:resource="http://hatespeech.di.unito.it/stereotypes#Expression"/>
+        <rdfs:range rdf:resource="http://hatespeech.di.unito.it/stereotypes#Manifestation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#hasMember -->
+
+    <owl:ObjectProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#hasMember">
+        <owl:equivalentProperty rdf:resource="http://hatespeech.di.unito.it/stereotypes#member"/>
+        <owl:inverseOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#isMemberOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#hasPart">
+        <owl:equivalentProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#hasRole">
+        <owl:equivalentProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRole"/>
+        <owl:inverseOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#isRoleOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#Group"/>
+                    <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#Organization"/>
+                    <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://hatespeech.di.unito.it/stereotypes#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#hasScheme -->
+
+    <owl:ObjectProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#hasScheme"/>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#hasTarget -->
+
+    <owl:ObjectProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#hasTarget">
+        <owl:inverseOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#isTargetOf"/>
+        <rdfs:range rdf:resource="http://hatespeech.di.unito.it/stereotypes#Target"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#hasTopic -->
+
+    <owl:ObjectProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#hasTopic"/>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#includesAgent -->
+
+    <owl:ObjectProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#includesAgent">
+        <owl:inverseOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#isAgentIn"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#includesPatient -->
+
+    <owl:ObjectProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#includesPatient">
+        <owl:inverseOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#isPatientin"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#isAgentIn -->
+
+    <owl:ObjectProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#isAgentIn"/>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#isBorn -->
+
+    <owl:ObjectProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#isBorn"/>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#isEmbodimentOf -->
+
+    <owl:ObjectProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#isEmbodimentOf">
+        <owl:equivalentProperty rdf:resource="http://purl.org/vocab/frbr/core#embodimentOf"/>
+        <rdfs:domain rdf:resource="http://hatespeech.di.unito.it/stereotypes#Manifestation"/>
+        <rdfs:range rdf:resource="http://hatespeech.di.unito.it/stereotypes#Expression"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#isEvokedBy -->
+
+    <owl:ObjectProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#isEvokedBy">
+        <owl:equivalentProperty rdf:resource="http://www.w3.org/ns/lemon/ontolex#isEvokedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#isExpressed -->
+
+    <owl:ObjectProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#isExpressed">
+        <owl:equivalentProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptExpressedBy"/>
+        <owl:inverseOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#expresses"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#isMemberOf -->
+
+    <owl:ObjectProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#isMemberOf"/>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#isPartOf">
+        <owl:equivalentProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf"/>
+        <rdfs:range rdf:resource="http://hatespeech.di.unito.it/stereotypes#DataSet"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#isPatientin -->
+
+    <owl:ObjectProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#isPatientin"/>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#isPublished -->
+
+    <owl:ObjectProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#isPublished"/>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#isRoleOf -->
+
+    <owl:ObjectProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#isRoleOf">
+        <owl:equivalentProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf"/>
+        <rdfs:domain rdf:resource="http://hatespeech.di.unito.it/stereotypes#Role"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#Group"/>
+                    <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#Organization"/>
+                    <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#isSenseOf -->
+
+    <owl:ObjectProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#isSenseOf">
+        <owl:equivalentProperty rdf:resource="http://www.w3.org/ns/lemon/ontolex#isSenseOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#isSettingFor -->
+
+    <owl:ObjectProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#isSettingFor">
+        <owl:equivalentProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#isTargetOf -->
+
+    <owl:ObjectProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#isTargetOf">
+        <rdfs:domain rdf:resource="http://hatespeech.di.unito.it/stereotypes#Target"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#member -->
+
+    <owl:ObjectProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#member">
+        <rdfs:domain rdf:resource="http://hatespeech.di.unito.it/stereotypes#Group"/>
+        <rdfs:range rdf:resource="http://hatespeech.di.unito.it/stereotypes#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#perceivedAs -->
+
+    <owl:ObjectProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#perceivedAs"/>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#qualifiedAttribution -->
+
+    <owl:ObjectProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#qualifiedAttribution">
+        <owl:equivalentProperty rdf:resource="http://www.w3.org/ns/prov#qualifiedAttribution"/>
+        <rdfs:range rdf:resource="http://hatespeech.di.unito.it/stereotypes#Attribution"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#sense -->
+
+    <owl:ObjectProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#sense">
+        <owl:equivalentProperty rdf:resource="http://www.w3.org/ns/lemon/ontolex#sense"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#spread -->
+
+    <owl:ObjectProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#spread">
+        <owl:inverseOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#spreadedBy"/>
+        <rdfs:range rdf:resource="http://hatespeech.di.unito.it/stereotypes#Prejudice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#spreadedBy -->
+
+    <owl:ObjectProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#spreadedBy">
+        <rdfs:domain rdf:resource="http://hatespeech.di.unito.it/stereotypes#Prejudice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#wasAnnotated -->
+
+    <owl:ObjectProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#wasAnnotated">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#wasAttributedTo -->
+
+    <owl:ObjectProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#wasAttributedTo">
+        <owl:equivalentProperty rdf:resource="http://www.w3.org/ns/prov#wasAttributedTo"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.w3.org/ns/prov#qualifiedAttribution"/>
+            <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#agent"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#wasClusterizedAs -->
+
+    <owl:ObjectProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#wasClusterizedAs">
+        <owl:equivalentProperty rdf:resource="http://www.w3.org/ns/lemon/ontolex#isLexicalizedSenseOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/created">
+        <owl:inverseOf rdf:resource="http://purl.org/dc/terms/creator"/>
+        <rdfs:domain rdf:resource="http://hatespeech.di.unito.it/stereotypes#Text"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#Group"/>
+                    <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#Organization"/>
+                    <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/creator">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#Group"/>
+                    <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#Organization"/>
+                    <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://hatespeech.di.unito.it/stereotypes#Text"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/vocab/frbr/core#embodiment -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/vocab/frbr/core#embodiment"/>
+    
+
+
+    <!-- http://purl.org/vocab/frbr/core#embodimentOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/vocab/frbr/core#embodimentOf"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#expresses -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#expresses"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#expressesConcept -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#expressesConcept"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRole"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptExpressedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptExpressedBy"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isExpressedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isExpressedBy"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
+    
+
+
+    <!-- http://www.w3.org/ns/lemon/ontolex#evokes -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/lemon/ontolex#evokes"/>
+    
+
+
+    <!-- http://www.w3.org/ns/lemon/ontolex#isEvokedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/lemon/ontolex#isEvokedBy"/>
+    
+
+
+    <!-- http://www.w3.org/ns/lemon/ontolex#isLexicalizedSenseOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/lemon/ontolex#isLexicalizedSenseOf"/>
+    
+
+
+    <!-- http://www.w3.org/ns/lemon/ontolex#isSenseOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/lemon/ontolex#isSenseOf"/>
+    
+
+
+    <!-- http://www.w3.org/ns/lemon/ontolex#sense -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/lemon/ontolex#sense"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#activity -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#activity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#influencer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#agent -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#agent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#influencer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#generated -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#generated">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#influenced"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#influenced -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#influenced"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#influencer -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#influencer"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#qualifiedAssociation -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#qualifiedAssociation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#qualifiedInfluence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#qualifiedAttribution -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#qualifiedAttribution">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#qualifiedInfluence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#qualifiedGeneration -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#qualifiedGeneration">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#qualifiedInfluence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#qualifiedInfluence -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#qualifiedInfluence"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasAssociatedWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasAssociatedWith">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.w3.org/ns/prov#qualifiedAssociation"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/prov#agent"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasAttributedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasAttributedTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.w3.org/ns/prov#qualifiedAttribution"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/prov#agent"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasGeneratedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasGeneratedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.w3.org/ns/prov#qualifiedGeneration"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/prov#activity"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasInfluencedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#birthYear -->
+
+    <owl:DatatypeProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#birthYear">
+        <rdfs:domain rdf:resource="http://hatespeech.di.unito.it/stereotypes#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#chunk -->
+
+    <owl:DatatypeProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#chunk">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#containsHateSpeech -->
+
+    <owl:DatatypeProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#containsHateSpeech">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#containsIrony -->
+
+    <owl:DatatypeProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#containsIrony">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#containsSarcasm -->
+
+    <owl:DatatypeProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#containsSarcasm">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#date -->
+
+    <owl:DatatypeProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#date"/>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#gender -->
+
+    <owl:DatatypeProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#gender"/>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#hasFrame -->
+
+    <owl:DatatypeProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#hasFrame">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#hasId -->
+
+    <owl:DatatypeProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#hasId">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#hasImage -->
+
+    <owl:DatatypeProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#hasImage"/>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#hasPolarity -->
+
+    <owl:DatatypeProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#hasPolarity">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#hasText -->
+
+    <owl:DatatypeProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#hasText">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#hashtag -->
+
+    <owl:DatatypeProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#hashtag"/>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#language -->
+
+    <owl:DatatypeProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#language">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#value -->
+
+    <owl:DatatypeProperty rdf:about="http://hatespeech.di.unito.it/stereotypes#value"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/source">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/oa#end -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/oa#end"/>
+    
+
+
+    <!-- http://www.w3.org/ns/oa#start -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/oa#start"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Addressee -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#Addressee">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#AgentRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Addresser -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#Addresser">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#AgentRole"/>
+        <rdfs:comment>The agent that sends a message</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#AdjacencyPair -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#AdjacencyPair">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#Situation"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://hatespeech.di.unito.it/stereotypes#isSettingFor"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#FirstPair"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://hatespeech.di.unito.it/stereotypes#isSettingFor"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#Reply"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#AffectiveCompetence -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#AffectiveCompetence">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#DiscreditForm"/>
+        <rdfs:comment>Affective competence: competence can also be affective when the immigrant is described as a numb, emotionless person, or a parasitic, describing the individual’s emotional features</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Age -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#Age">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#PersonAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Agent -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#Agent"/>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#AgentRole -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#AgentRole">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#Role"/>
+        <owl:disjointWith rdf:resource="http://hatespeech.di.unito.it/stereotypes#MessageRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Annotation -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#Annotation">
+        <owl:equivalentClass rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Design"/>
+        <owl:equivalentClass rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalSense"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Annotator -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#Annotator">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#AgentRole"/>
+        <rdfs:comment>The agent who evaluated the presence of a stereotype in a message</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Attribution -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#Attribution">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/ns/prov#Attribution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Benevolence -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#Benevolence">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#DiscreditForm"/>
+        <rdfs:comment>acting on behalf of their interests and not one’s own, being
+trustworthy, honest, ethical. In this case the immigrant will be seen as
+a thief, a rapist, a murderer, a criminal and a profiteer: an unreliable
+individual that behaves illegally.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Church -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#Church">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Communist -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#Communist">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#PoliticalParty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Competence -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#Competence">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#DiscreditForm"/>
+        <rdfs:comment>it emerges from the experience, knowledge and intelligence
+of an individual. On the competence dimension, an individual is negatively evaluated by accusing him of ignorance, stupidity, lack of prepa ration, incomprehensibility. The immigrant will thus be an imbecile, a goat.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Conservative -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#Conservative">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#PoliticalParty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#DataSet -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#DataSet">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#DiscreditForm -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#DiscreditForm"/>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#DominanceDown -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#DominanceDown">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#DiscreditForm"/>
+        <rdfs:comment>in passive terms (Dominance Down):, immigrant can be described
+as a parasite, a nothing, a slacker who complains.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#DominanceUp -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#DominanceUp">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#DiscreditForm"/>
+        <rdfs:comment>in active terms (Dominance Up): when the immigrant is classified
+as overbearing, dangerous, aggressive, someone who also forcibly demands something he hasn’t deserved.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#EthnicOrigin -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#EthnicOrigin">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#PersonAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Expression -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#Expression">
+        <owl:equivalentClass rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+        <owl:equivalentClass rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Gender -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#Gender">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#PersonAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Group -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#Group">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#HateSpeech -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#HateSpeech">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#Annotation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#HomeCountry -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#HomeCountry">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#PersonAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#International -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#International">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#Non-ProfitAssociation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Irony -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#Irony">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#Annotation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#LeftWing -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#LeftWing">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#PoliticalParty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Liberal -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#Liberal">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#PoliticalParty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Local -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#Local">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#Non-ProfitAssociation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Manifestation -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#Manifestation">
+        <owl:equivalentClass rdf:resource="http://purl.org/vocab/frbr/core#Manifestation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#MessageRole -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#MessageRole">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Misogyny -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#Misogyny">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#Annotation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#MoralValue -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#MoralValue">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#Annotation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#National -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#National">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#Non-ProfitAssociation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Nationalist -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#Nationalist">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#PoliticalParty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Non-ProfitAssociation -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#Non-ProfitAssociation">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Organization -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#Organization">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/ns/prov#Organization"/>
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Person -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#Person">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#PersonAttribute -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#PersonAttribute"/>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#PhysicalFeatures -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#PhysicalFeatures">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#DiscreditForm"/>
+        <rdfs:comment>Physical features: dirty, sick, ugly, disgusting, black, dangerous for the health of the citizens.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#PhysicalTraits -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#PhysicalTraits">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#PersonAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Place -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#Place"/>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#PoliticalParty -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#PoliticalParty">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#PoliticalStance -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#PoliticalStance">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#PersonAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Populist -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#Populist">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#PoliticalParty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Prejudice -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#Prejudice"/>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#ProfessedReligion -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#ProfessedReligion">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#PersonAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Reformist -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#Reformist">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#PoliticalParty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#RightWing -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#RightWing">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#PoliticalParty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Role -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#Role">
+        <owl:disjointWith rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#SexualOrientation -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#SexualOrientation">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#PersonAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Situation -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#Situation">
+        <owl:equivalentClass rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#SocialMediaPost -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#SocialMediaPost">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#Manifestation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#SpokenLanguage -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#SpokenLanguage">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#PersonAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Stance -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#Stance">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#Annotation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Stereotype -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#Stereotype">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#Annotation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Target -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#Target">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#AgentRole"/>
+        <rdfs:comment>The agent that receives a message</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Text -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#Text">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#TradeUnion -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#TradeUnion">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Tweet -->
+
+    <owl:Class rdf:about="http://hatespeech.di.unito.it/stereotypes#Tweet">
+        <rdfs:subClassOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#SocialMediaPost"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/DCMIType -->
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/DCMIType">
+        <owl:equivalentClass rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vocab/frbr/core#Expression -->
+
+    <owl:Class rdf:about="http://purl.org/vocab/frbr/core#Expression"/>
+    
+
+
+    <!-- http://purl.org/vocab/frbr/core#Manifestation -->
+
+    <owl:Class rdf:about="http://purl.org/vocab/frbr/core#Manifestation"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Design -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Design"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/>
+    
+
+
+    <!-- http://www.w3.org/ns/lemon/ontolex#LexicalConcept -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/lemon/ontolex#LexicalConcept"/>
+    
+
+
+    <!-- http://www.w3.org/ns/lemon/ontolex#LexicalEntry -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    
+
+
+    <!-- http://www.w3.org/ns/lemon/ontolex#LexicalSense -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/lemon/ontolex#LexicalSense"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Attribution -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Attribution"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Organization -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Organization"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Person -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Person"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Ami2018 -->
+
+    <owl:NamedIndividual rdf:about="http://hatespeech.di.unito.it/stereotypes#Ami2018">
+        <rdf:type rdf:resource="http://hatespeech.di.unito.it/stereotypes#DataSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Ami2020 -->
+
+    <owl:NamedIndividual rdf:about="http://hatespeech.di.unito.it/stereotypes#Ami2020">
+        <rdf:type rdf:resource="http://hatespeech.di.unito.it/stereotypes#DataSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#BuonaScuola -->
+
+    <owl:NamedIndividual rdf:about="http://hatespeech.di.unito.it/stereotypes#BuonaScuola">
+        <rdf:type rdf:resource="http://hatespeech.di.unito.it/stereotypes#DataSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#CrowdHS -->
+
+    <owl:NamedIndividual rdf:about="http://hatespeech.di.unito.it/stereotypes#CrowdHS">
+        <rdf:type rdf:resource="http://hatespeech.di.unito.it/stereotypes#DataSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#FirstPair -->
+
+    <owl:NamedIndividual rdf:about="http://hatespeech.di.unito.it/stereotypes#FirstPair">
+        <rdf:type rdf:resource="http://hatespeech.di.unito.it/stereotypes#MessageRole"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#HaSpeeDe2018 -->
+
+    <owl:NamedIndividual rdf:about="http://hatespeech.di.unito.it/stereotypes#HaSpeeDe2018">
+        <rdf:type rdf:resource="http://hatespeech.di.unito.it/stereotypes#DataSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#HaSpeeDe2020 -->
+
+    <owl:NamedIndividual rdf:about="http://hatespeech.di.unito.it/stereotypes#HaSpeeDe2020">
+        <rdf:type rdf:resource="http://hatespeech.di.unito.it/stereotypes#DataSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#HaSpeeDe20_01 -->
+
+    <owl:NamedIndividual rdf:about="http://hatespeech.di.unito.it/stereotypes#HaSpeeDe20_01">
+        <rdf:type rdf:resource="http://hatespeech.di.unito.it/stereotypes#Text"/>
+        <stereotypes:wasAnnotated rdf:resource="http://hatespeech.di.unito.it/stereotypes#HaSpeeDe20_01"/>
+        <DUL:isPartOf rdf:resource="http://hatespeech.di.unito.it/stereotypes#HaSpeeDe2020"/>
+        <stereotypes:hasText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L&apos;immigrato che non piace alla sinistra razzista.Tanto di cappello a questo migrante,questi sono i migranti che voglio.Gli italiani non sono razzisti,anzi, sono fin troppo accoglienti.Non ne possono + di mantenere migranti che non lavorano ma delinquono.😐 https://t.co/dUH7RPydhO</stereotypes:hasText>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Haspeede20_annotation_01 -->
+
+    <owl:NamedIndividual rdf:about="http://hatespeech.di.unito.it/stereotypes#Haspeede20_annotation_01">
+        <stereotypes:wasAttributedTo rdf:resource="http://hatespeech.di.unito.it/stereotypes#Haspeede20_annotator_01"/>
+        <stereotypes:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stereotypes:value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Haspeede20_annotator_01 -->
+
+    <owl:NamedIndividual rdf:about="http://hatespeech.di.unito.it/stereotypes#Haspeede20_annotator_01">
+        <rdf:type rdf:resource="http://hatespeech.di.unito.it/stereotypes#Annotator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#HateSpeechCorpus -->
+
+    <owl:NamedIndividual rdf:about="http://hatespeech.di.unito.it/stereotypes#HateSpeechCorpus">
+        <rdf:type rdf:resource="http://hatespeech.di.unito.it/stereotypes#DataSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Ironita2018 -->
+
+    <owl:NamedIndividual rdf:about="http://hatespeech.di.unito.it/stereotypes#Ironita2018">
+        <rdf:type rdf:resource="http://hatespeech.di.unito.it/stereotypes#DataSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#LauraRomano -->
+
+    <owl:NamedIndividual rdf:about="http://hatespeech.di.unito.it/stereotypes#LauraRomano">
+        <rdf:type rdf:resource="http://hatespeech.di.unito.it/stereotypes#DataSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#MoralConvITA -->
+
+    <owl:NamedIndividual rdf:about="http://hatespeech.di.unito.it/stereotypes#MoralConvITA">
+        <rdf:type rdf:resource="http://hatespeech.di.unito.it/stereotypes#DataSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#PopulismoPenale -->
+
+    <owl:NamedIndividual rdf:about="http://hatespeech.di.unito.it/stereotypes#PopulismoPenale">
+        <rdf:type rdf:resource="http://hatespeech.di.unito.it/stereotypes#DataSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Reply -->
+
+    <owl:NamedIndividual rdf:about="http://hatespeech.di.unito.it/stereotypes#Reply">
+        <rdf:type rdf:resource="http://hatespeech.di.unito.it/stereotypes#MessageRole"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#SardiStance -->
+
+    <owl:NamedIndividual rdf:about="http://hatespeech.di.unito.it/stereotypes#SardiStance">
+        <rdf:type rdf:resource="http://hatespeech.di.unito.it/stereotypes#DataSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#Twittiro -->
+
+    <owl:NamedIndividual rdf:about="http://hatespeech.di.unito.it/stereotypes#Twittiro">
+        <rdf:type rdf:resource="http://hatespeech.di.unito.it/stereotypes#DataSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#aBlankNode -->
+
+    <owl:NamedIndividual rdf:about="http://hatespeech.di.unito.it/stereotypes#aBlankNode">
+        <rdf:type rdf:resource="http://hatespeech.di.unito.it/stereotypes#HateSpeech"/>
+        <stereotypes:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</stereotypes:value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://hatespeech.di.unito.it/stereotypes#gold-standard -->
+
+    <owl:NamedIndividual rdf:about="http://hatespeech.di.unito.it/stereotypes#gold-standard">
+        <rdf:type rdf:resource="http://hatespeech.di.unito.it/stereotypes#Group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.org/dc/dcmitype">
+        <term:title xml:lang="en">DCMI Type Vocabulary</term:title>
+        <term:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-06-14</term:modified>
+        <term:publisher rdf:resource="http://purl.org/dc/aboutdcmi#DCMI"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#AffectiveCompetence"/>
+            <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#Benevolence"/>
+            <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#Competence"/>
+            <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#DominanceDown"/>
+            <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#DominanceUp"/>
+            <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#PhysicalFeatures"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#Age"/>
+            <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#EthnicOrigin"/>
+            <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#Gender"/>
+            <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#HomeCountry"/>
+            <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#PhysicalTraits"/>
+            <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#PoliticalStance"/>
+            <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#ProfessedReligion"/>
+            <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#SexualOrientation"/>
+            <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#SpokenLanguage"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#Communist"/>
+            <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#Conservative"/>
+            <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#LeftWing"/>
+            <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#Liberal"/>
+            <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#Nationalist"/>
+            <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#Populist"/>
+            <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#Reformist"/>
+            <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#RightWing"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#Group"/>
+            <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#Organization"/>
+            <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#Person"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#HateSpeech"/>
+            <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#Irony"/>
+            <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#Misogyny"/>
+            <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#MoralValue"/>
+            <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#Stance"/>
+            <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#Stereotype"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#International"/>
+            <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#Local"/>
+            <rdf:Description rdf:about="http://hatespeech.di.unito.it/stereotypes#National"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
