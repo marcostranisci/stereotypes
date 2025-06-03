@@ -2,17 +2,17 @@ import pandas as pd
 import random
 import csv
 
-file = open('classifications.csv',mode='w')
+#file = open('classifications_2.csv',mode='w')
 
-writer = csv.DictWriter(file,fieldnames=['id','output'])
-writer.writeheader()
+'''writer = csv.DictWriter(file,fieldnames=['id','output'])
+writer.writeheader()'''
 def create_prompt(row):
 
   text = row["tweet"]
   opt_marem = row['cleaned_cl_marem']
   opt_marco = row['cleaned_cl_marco']
   opt_ale = row['cleaned_cl_ale']
-  random.seed(42)
+  random.seed(16)
   list_options = [opt_marem, opt_marco, opt_ale]
   random.shuffle(list_options)
 
@@ -63,14 +63,10 @@ print(len(dataset))
 
 dataset["prompt"] = dataset.apply(create_prompt, axis=1)
 
-df.to_csv('output/processed_dataset.csv',index=False)
+dataset.to_csv('output/processed_dataset_2.csv',index=False)
 
 '''import transformers
 import torch
-from datasets import Dataset
-from transformers.pipelines.pt_utils import KeyDataset
-
-from transformers import PreTrainedTokenizerFast
 from tqdm import tqdm
 
 model_id = "sapienzanlp/Minerva-7B-instruct-v1.0"  # Replace with a compatible model ID
@@ -88,12 +84,11 @@ pipeline = transformers.pipeline(
 # Input text for the model.
 input_conv = [{"role": "user", "content": "Che tipo di stereotipo c'è in questo testo 'i migranti non vogliono lavorare'? Scegli tra: 1. sono pigri, 2. sono sfruttatori e 3. sono un fardello? Rispondi alla domanda con un numero tra 1 e 3"}]
 
-for _,item in dataset.iterrows():
-  print(item.id,item.prompt)
+for _,item in tqdm(dataset.iterrows(),total=len(dataset)):
   output = pipeline(
     item.prompt,
     max_new_tokens=15,
   )
 
 
-  writer.writerow({'id':item.id,'output':output['generated_text'][1]['content']})'''
+  writer.writerow({'id':item.id,'output':output})'''

@@ -1,9 +1,9 @@
 import pandas as pd
 import regex as re
 
-df = pd.read_csv('output/classifications.csv')
+df = pd.read_csv('output/classifications_2.csv')
 
-parsed = pd.read_csv('output/processed_dataset.csv')
+parsed = pd.read_csv('output/processed_dataset_2.csv')
 
 
 
@@ -33,4 +33,4 @@ for _,item in df.iterrows():
         l.append('ale')
 
 df['label'] = l
-df.to_csv('output/parsed_output.csv',index=False)
+df.to_csv('output/parsed_output_2.csv',index=False)
