@@ -2,17 +2,17 @@ import pandas as pd
 import random
 import csv
 
-#file = open('classifications_2.csv',mode='w')
+file = open('new_output/classifications_1.csv',mode='w')
 
-'''writer = csv.DictWriter(file,fieldnames=['id','output'])
-writer.writeheader()'''
+writer = csv.DictWriter(file,fieldnames=['id','span','output',"05","01","02"])
+writer.writeheader()
 def create_prompt(row):
 
   text = row["tweet"]
   opt_marem = row['cleaned_cl_marem']
   opt_marco = row['cleaned_cl_marco']
   opt_ale = row['cleaned_cl_ale']
-  random.seed(16)
+  random.seed(42)
   list_options = [opt_marem, opt_marco, opt_ale]
   random.shuffle(list_options)
 
@@ -63,15 +63,17 @@ print(len(dataset))
 
 dataset["prompt"] = dataset.apply(create_prompt, axis=1)
 
-dataset.to_csv('output/processed_dataset_2.csv',index=False)
+dataset.to_csv('new_output/processed_dataset_1.csv',index=False)
 
-'''import transformers
+import transformers
 import torch
 from tqdm import tqdm
 
 model_id = "sapienzanlp/Minerva-7B-instruct-v1.0"  # Replace with a compatible model ID
 
 
+
+transformers.set_seed(42)
 
 # Initialize the pipeline.
 pipeline = transformers.pipeline(
@@ -91,4 +93,4 @@ for _,item in tqdm(dataset.iterrows(),total=len(dataset)):
   )
 
 
-  writer.writerow({'id':item.id,'output':output})'''
+  writer.writerow({'id':item.id,'span':item.chunk,'output':output,'05':item.cleaned_cl_marem,'01':item.cleaned_cl_marco,'02':item.cleaned_cl_ale})
