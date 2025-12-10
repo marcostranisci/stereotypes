@@ -34,7 +34,15 @@ print("Dataframe based on 5 clusters", df_on5.shape)
 df_on5.to_csv("./data/data_on5.csv", index=False)
 
 
+o_ster = joined.rename(columns={"cluster_10_marem": "cluster_10_ann05", "cluster_5_marem": "cluster_5_ann05",
+                                "cluster_10_nome_marem": "cluster_10_nome_ann05", "cluster_5_nome_marem": "cluster_5_nome_ann05",
+                                
+                                "cluster_10_marco": "cluster_10_ann01", "cluster_5_marco": "cluster_5_ann01",
+                                "cluster_10_nome_marco": "cluster_10_nome_ann01", "cluster_5_nome_marco": "cluster_5_nome_ann01",
 
+                                "cluster_10_nome_ale": "cluster_10_nome_ann02", "cluster_5_nome_ale": "cluster_5_nome_ann02"
+                                })
 
+o_ster.to_csv("./data/open_stereotypes_corpus.csv", index=False)
 
 
